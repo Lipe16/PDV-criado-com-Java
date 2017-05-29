@@ -1,0 +1,27 @@
+{
+  "uuid": "edeb543a-ab6f-34dd-ba8b-eb71760a1563",
+  "name": "Spinner",
+  "description": "new Spinner",
+  "extraSearchTerms": [
+    "numeric"
+  ],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${spinnerType:newType(org.eclipse.swt.widgets.Spinner)} ${spinner:newName(org.eclipse.swt.widgets.Spinner)}\u003d new ${spinnerType}(${parent:var(org.eclipse.swt.widgets.Composite)}, ${style:link(SWT.BORDER, \u0027SWT.WRAP | SWT.BORDER\u0027, \u0027SWT.READ_ONLY | SWT.BORDER\u0027, \u0027SWT.READ_ONLY | SWT.WRAP | SWT.BORDER\u0027, SWT.WRAP, SWT.READ_ONLY)});\n${spinner}.setLayoutData(new ${gridDataType:newType(org.eclipse.swt.layout.GridData)}(SWT.${horizontal:link(BEGINNING, CENTER, END, FILL)}, SWT.${vertical:link(CENTER, TOP, BOTTOM, FILL)}, ${hex:link(false, true)}, ${vex:link(false, true)}));\n${spinner}.setMaximum(${max:link(10)});\n${spinner}.setIncrement(${inc:link(1)});\n${imp:import(org.eclipse.swt.SWT)}${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

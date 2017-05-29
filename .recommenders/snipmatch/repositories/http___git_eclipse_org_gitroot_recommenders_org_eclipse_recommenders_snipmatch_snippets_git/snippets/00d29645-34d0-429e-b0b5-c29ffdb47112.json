@@ -1,0 +1,25 @@
+{
+  "uuid": "00d29645-34d0-429e-b0b5-c29ffdb47112",
+  "name": "Implement equals \u0026 hashCode with reflection",
+  "description": "implement equals \u0026 hashCode through apache commons Equals/HashCodeBuilder",
+  "extraSearchTerms": [
+    "EqualsBuilder"
+  ],
+  "tags": [
+    "commons"
+  ],
+  "code": "@Override\npublic boolean equals(Object obj) {\n\treturn EqualsBuilder.reflectionEquals(this, obj);\n}\n\n@Override\npublic int hashCode() {\n\treturn HashCodeBuilder.reflectionHashCode(this);\n}\n${:import(org.apache.commons.lang3.builder.EqualsBuilder, org.apache.commons.lang3.builder.HashCodeBuilder)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "org.apache.commons",
+      "artifactId": "commons-lang3",
+      "version": "0.0.0"
+    }
+  ]
+}

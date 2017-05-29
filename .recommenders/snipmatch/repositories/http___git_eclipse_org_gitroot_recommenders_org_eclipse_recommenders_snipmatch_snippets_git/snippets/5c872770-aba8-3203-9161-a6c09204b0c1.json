@@ -1,0 +1,20 @@
+{
+  "uuid": "5c872770-aba8-3203-9161-a6c09204b0c1",
+  "name": "for",
+  "description": "iterate over collection",
+  "extraSearchTerms": [
+    "loop"
+  ],
+  "tags": [
+    "java"
+  ],
+  "code": "for (${iteratorType:newType(java.util.Iterator)} ${iterator} \u003d ${collection}.iterator(); ${iterator}.hasNext(); ) {\n\t${type:elemType(collection)} ${name:newName(type)} \u003d (${type}) ${iterator}.next();\n\t${cursor}\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

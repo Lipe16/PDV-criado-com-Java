@@ -1,0 +1,25 @@
+{
+  "uuid": "3b9f5ee5-ee26-3f39-ad31-f9c816ae4350",
+  "name": "Tree",
+  "description": "new Tree",
+  "extraSearchTerms": [],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${type:newType(org.eclipse.swt.widgets.Tree)} ${tree:newName(org.eclipse.swt.widgets.Tree)}\u003d new ${type}(${parent:var(org.eclipse.swt.widgets.Composite)}, ${style:link(\u0027SWT.SINGLE | SWT.FULL_SELECTION\u0027, \u0027SWT.MULTI | SWT.FULL_SELECTION\u0027, SWT.CHECK, SWT.NONE, SWT.VIRTUAL)});\n${tree}.setLayoutData(new ${gridDataType:newType(org.eclipse.swt.layout.GridData)}(SWT.${horizontal:link(FILL, BEGINNING, CENTER, END)}, SWT.${vertical:link(FILL, TOP, CENTER, BOTTOM)}, ${hex:link(true, false)}, ${vex:link(true, false)}));\n${tree}.setLinesVisible(${line:link(true, false)});\n${tree}.setHeaderVisible(${header:link(true, false)});\n${imp:import(org.eclipse.swt.SWT)}${cursor}\n\nfor (int ${index} \u003d 0; ${index} \u003c ${tree}.getColumnCount(); ${index}++) {\n\t${tree}.getColumn(${index}).pack();\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

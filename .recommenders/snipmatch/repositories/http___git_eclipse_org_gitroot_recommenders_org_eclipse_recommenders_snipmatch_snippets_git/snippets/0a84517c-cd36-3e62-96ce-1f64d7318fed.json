@@ -1,0 +1,18 @@
+{
+  "uuid": "0a84517c-cd36-3e62-96ce-1f64d7318fed",
+  "name": "cast",
+  "description": "dynamic cast",
+  "extraSearchTerms": [],
+  "tags": [
+    "java"
+  ],
+  "code": "${type} ${new_name} \u003d (${type}) ${name};",
+  "location": "JAVA",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

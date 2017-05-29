@@ -1,0 +1,23 @@
+{
+  "uuid": "a451b227-834d-4ff0-b084-b45b49ad5b2e",
+  "name": "after tests",
+  "description": "tearDown JUnit tests (JUnit 4)",
+  "extraSearchTerms": [],
+  "tags": [
+    "test"
+  ],
+  "code": "@After\npublic void tearDown() {\n\t${cursor}\n}\n${after:import(org.junit.After)}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "dependencies": [
+    {
+      "groupId": "junit",
+      "artifactId": "junit",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

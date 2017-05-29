@@ -1,0 +1,7 @@
+## by default, ignore every file
+*
+
+## but include some standard files:
+!snippets/
+!snippets/*
+!.gitignore

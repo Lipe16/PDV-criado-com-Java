@@ -1,0 +1,25 @@
+{
+  "uuid": "21adbb15-ba2d-3bc3-b02e-9d436f487eca",
+  "name": "Link",
+  "description": "new Link",
+  "extraSearchTerms": [],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${linkType:newType(org.eclipse.swt.widgets.Link)} ${link:newName(org.eclipse.swt.widgets.Link)}\u003d new ${linkType}(${parent:var(org.eclipse.swt.widgets.Composite)}, SWT.NONE);\n${link}.setLayoutData(new ${type:newType(org.eclipse.swt.layout.GridData)}(SWT.${horizontal:link(BEGINNING, CENTER, END, FILL)}, SWT.${vertical:link(CENTER, TOP, BOTTOM, FILL)}, ${hex:link(false, true)}, ${vex:link(false, true)}));\n${link}.setText(${word_selection}${});\n${link}.addSelectionListener(new SelectionAdapter() {\n\t\t\t@Override\n\t\t\tpublic void widgetSelected(SelectionEvent e) {\n\t\t\t\t${listener:link(\u0027\u0027)}\n\t\t\t}\n\t\t});\n${imp:import(org.eclipse.swt.SWT, org.eclipse.swt.events.SelectionAdapter, org.eclipse.swt.events.SelectionEvent)}${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

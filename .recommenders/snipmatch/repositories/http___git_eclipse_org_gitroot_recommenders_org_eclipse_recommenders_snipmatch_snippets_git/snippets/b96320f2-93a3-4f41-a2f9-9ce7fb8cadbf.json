@@ -1,0 +1,22 @@
+{
+  "uuid": "b96320f2-93a3-4f41-a2f9-9ce7fb8cadbf",
+  "name": "Unmarshall object with JAXB",
+  "description": "Convert an XML document into a Java object with JAXB",
+  "extraSearchTerms": [
+    "deserialize",
+    "read"
+  ],
+  "tags": [
+    "io",
+    "xml"
+  ],
+  "code": "JAXBContext ${context:newName(javax.xml.bind.JAXBContext)} \u003d JAXBContext.newInstance(${path});\nUnmarshaller ${unmarshaller:newName(javax.xml.bind.Unmarshaller)} \u003d ${context}.createUnmarshaller();\nJAXBElement\u003c${T}\u003e ${document:newName(javax.xml.bind.JAXBElement)} \u003d (JAXBElement\u003c${T}\u003e) ${unmarshaller}.unmarshal(${input});\n${T} value \u003d ${document}.getValue();\n${:import(javax.xml.bind.JAXBContext,javax.xml.bind.Unmarshaller,javax.xml.bind.JAXBElement)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

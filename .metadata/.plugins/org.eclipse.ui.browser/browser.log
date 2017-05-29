@@ -1,0 +1,514 @@
+
+nov 23, 2016 14:23:45.31 NEW SESSION
+nov 23, 2016 14:23:45.32 [4660:4664:1123/142345:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+nov 23, 2016 14:23:45.32 [4660:4664:1123/142345:ERROR:gl_surface_egl.cc(612)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+nov 23, 2016 14:23:48.68 [1123/142348:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+nov 23, 2016 14:23:48.91 [4520:4628:1123/142348:ERROR:generic_change_processor.cc(391)] Autofill datatype error was encountered: Failed to delete Autofill node. Local data. ActOnChanges@c:\b\build\slave\win-pgo\build\src\components\autofill\core\browser\webdata\autocomplete_syncable_service.cc:394could not find entry matching the lookup criteria.
+nov 23, 2016 14:23:48.91 [4520:4628:1123/142348:ERROR:generic_change_processor.cc(332)] Delete: Bad entry.
+nov 23, 2016 14:23:48.97 [4520:4628:1123/142348:ERROR:shared_change_processor.cc(202)] Change processor disconnected.
+nov 23, 2016 14:52:54.93 [4660:4664:1123/145254:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:52:54.93 [4660:4664:1123/145254:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:52:54.93 [4660:4664:1123/145254:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 3
+nov 23, 2016 14:52:57.95 [4660:4664:1123/145257:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:52:57.95 [4660:4664:1123/145257:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:52:57.95 [4660:4664:1123/145257:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 23, 2016 14:53:43.40 [4796:4052:1123/145343:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:53:57.61 [4660:4664:1123/145357:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:53:57.61 [4660:4664:1123/145357:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:53:57.61 [4660:4664:1123/145357:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 14:53:57.81 [4660:4664:1123/145357:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:53:57.81 [4660:4664:1123/145357:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:53:57.81 [4660:4664:1123/145357:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 23, 2016 14:53:58.14 [4660:4664:1123/145358:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:53:58.14 [4660:4664:1123/145358:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:53:58.14 [4660:4664:1123/145358:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 3
+nov 23, 2016 14:55:20.05 [4660:4664:1123/145520:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:55:20.05 [4660:4664:1123/145520:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:55:20.05 [4660:4664:1123/145520:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 3
+nov 23, 2016 14:55:23.07 [4660:4664:1123/145523:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:55:23.07 [4660:4664:1123/145523:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:55:23.07 [4660:4664:1123/145523:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 23, 2016 14:55:30.75 [4796:4052:1123/145530:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:55:38.63 [4796:4052:1123/145538:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:55:46.52 [4796:4052:1123/145546:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:55:54.42 [4796:4052:1123/145554:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:56:02.30 [4796:4052:1123/145602:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:56:10.21 [4796:4052:1123/145610:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:56:18.08 [4796:4052:1123/145618:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:56:25.97 [4796:4052:1123/145625:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:56:33.87 [4796:4052:1123/145633:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:56:41.75 [4796:4052:1123/145641:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:56:44.35 [4660:4664:1123/145644:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:56:44.35 [4660:4664:1123/145644:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:56:44.35 [4660:4664:1123/145644:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 14:56:49.65 [4796:4052:1123/145649:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:56:57.53 [4796:4052:1123/145657:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:57:00.12 [4660:4664:1123/145700:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:57:00.12 [4660:4664:1123/145700:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:57:00.12 [4660:4664:1123/145700:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 14:57:00.16 [4660:4664:1123/145700:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:57:00.16 [4660:4664:1123/145700:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:57:00.16 [4660:4664:1123/145700:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 14:57:00.60 [4660:4664:1123/145700:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 14:57:00.60 [4660:4664:1123/145700:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 14:57:00.60 [4660:4664:1123/145700:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 14:57:05.44 [4796:4052:1123/145705:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:57:13.34 [4796:4052:1123/145713:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:57:21.21 [4796:4052:1123/145721:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:57:29.10 [4796:4052:1123/145729:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:57:36.98 [4796:4052:1123/145736:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:57:44.88 [4796:4052:1123/145744:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:57:52.76 [4796:4052:1123/145752:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 14:58:00.65 [4796:4052:1123/145800:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 23, 2016 15:00:03.29 [4660:4664:1123/150003:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:00:03.29 [4660:4664:1123/150003:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:00:03.29 [4660:4664:1123/150003:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:00:42.97 [4660:4664:1123/150042:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:00:42.97 [4660:4664:1123/150042:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:00:42.97 [4660:4664:1123/150042:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:01:55.80 [4660:4664:1123/150155:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:01:55.80 [4660:4664:1123/150155:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:01:55.80 [4660:4664:1123/150155:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:02:08.57 [4660:4664:1123/150208:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:02:08.57 [4660:4664:1123/150208:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:02:08.57 [4660:4664:1123/150208:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:02:08.78 [4660:4664:1123/150208:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:02:08.78 [4660:4664:1123/150208:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:02:08.78 [4660:4664:1123/150208:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 3
+nov 23, 2016 15:02:19.93 [4660:4664:1123/150219:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:02:19.93 [4660:4664:1123/150219:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:02:19.93 [4660:4664:1123/150219:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:02:22.88 [4660:4664:1123/150222:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:02:22.88 [4660:4664:1123/150222:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:02:22.88 [4660:4664:1123/150222:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:02:40.39 [4660:4664:1123/150240:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:02:40.39 [4660:4664:1123/150240:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:02:40.39 [4660:4664:1123/150240:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:02:50.82 [4660:4664:1123/150250:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:02:50.82 [4660:4664:1123/150250:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:02:50.82 [4660:4664:1123/150250:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:02:50.82 [4660:4664:1123/150250:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:02:50.82 [4660:4664:1123/150250:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:02:50.82 [4660:4664:1123/150250:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:02:57.71 [4660:4664:1123/150257:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:02:57.71 [4660:4664:1123/150257:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:02:57.71 [4660:4664:1123/150257:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:03:00.57 [4660:4664:1123/150300:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:03:00.57 [4660:4664:1123/150300:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:03:00.57 [4660:4664:1123/150300:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:03:04.87 [4660:4664:1123/150304:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:03:04.87 [4660:4664:1123/150304:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:03:04.87 [4660:4664:1123/150304:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:03:09.25 [4660:4664:1123/150309:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:03:09.25 [4660:4664:1123/150309:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:03:09.25 [4660:4664:1123/150309:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:03:12.29 [4660:4664:1123/150312:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:03:12.29 [4660:4664:1123/150312:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:03:12.29 [4660:4664:1123/150312:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 23, 2016 15:03:14.39 [4660:4664:1123/150314:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:03:14.39 [4660:4664:1123/150314:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:03:14.39 [4660:4664:1123/150314:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:03:21.17 [4660:4664:1123/150321:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:03:21.17 [4660:4664:1123/150321:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:03:21.17 [4660:4664:1123/150321:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:03:38.01 [4660:4664:1123/150338:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:03:38.01 [4660:4664:1123/150338:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:03:38.01 [4660:4664:1123/150338:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:04:43.47 [4660:4664:1123/150443:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:04:43.47 [4660:4664:1123/150443:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:04:43.47 [4660:4664:1123/150443:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 3
+nov 23, 2016 15:04:45.57 [4660:4664:1123/150445:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:04:45.58 [4660:4664:1123/150445:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:04:45.58 [4660:4664:1123/150445:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:04:45.83 [4660:4664:1123/150445:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:04:45.83 [4660:4664:1123/150445:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:04:45.83 [4660:4664:1123/150445:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 3
+nov 23, 2016 15:04:46.79 [4660:4664:1123/150446:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:04:46.79 [4660:4664:1123/150446:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:04:46.79 [4660:4664:1123/150446:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 23, 2016 15:05:36.51 [4660:4664:1123/150536:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:05:36.51 [4660:4664:1123/150536:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:05:36.51 [4660:4664:1123/150536:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 3
+nov 23, 2016 15:05:46.94 [4660:4664:1123/150546:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:05:46.94 [4660:4664:1123/150546:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:05:46.94 [4660:4664:1123/150546:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 3
+nov 23, 2016 15:06:23.85 [4660:4664:1123/150623:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:06:23.86 [4660:4664:1123/150623:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:06:23.86 [4660:4664:1123/150623:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:08:30.44 [4660:4664:1123/150830:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:08:30.44 [4660:4664:1123/150830:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:08:30.44 [4660:4664:1123/150830:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:08:30.93 [4660:4664:1123/150830:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:08:30.93 [4660:4664:1123/150830:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:08:30.93 [4660:4664:1123/150830:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 23, 2016 15:08:33.12 [4660:4664:1123/150833:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:08:33.12 [4660:4664:1123/150833:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:08:33.12 [4660:4664:1123/150833:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 3
+nov 23, 2016 15:08:33.60 [4660:4664:1123/150833:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 23, 2016 15:08:33.60 [4660:4664:1123/150833:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 23, 2016 15:08:33.60 [4660:4664:1123/150833:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+
+nov 27, 2016 16:10:08.50 NEW SESSION
+nov 27, 2016 16:10:08.50 [4612:4616:1127/161008:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+nov 27, 2016 16:10:08.61 [4612:4616:1127/161008:ERROR:gl_surface_egl.cc(612)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+nov 27, 2016 16:10:18.31 [4468:4572:1127/161018:ERROR:generic_change_processor.cc(391)] Autofill datatype error was encountered: Failed to delete Autofill node. Local data. ActOnChanges@c:\b\build\slave\win-pgo\build\src\components\autofill\core\browser\webdata\autocomplete_syncable_service.cc:394could not find entry matching the lookup criteria.
+nov 27, 2016 16:10:18.31 [4468:4572:1127/161018:ERROR:generic_change_processor.cc(332)] Delete: Bad entry.
+nov 27, 2016 16:10:18.56 [1127/161018:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+nov 27, 2016 16:10:18.84 [4468:4572:1127/161018:ERROR:shared_change_processor.cc(202)] Change processor disconnected.
+nov 27, 2016 18:04:24.44 [4612:4616:1127/180424:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:04:24.62 [4612:4616:1127/180424:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:04:24.62 [4612:4616:1127/180424:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:04:24.62 [4612:4616:1127/180424:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:04:24.62 [4612:4616:1127/180424:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:04:24.62 [4612:4616:1127/180424:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:04:24.62 [4612:4616:1127/180424:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:04:24.62 [4612:4616:1127/180424:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:04:24.62 [4612:4616:1127/180424:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 27, 2016 18:04:43.28 [4612:4616:1127/180443:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:04:43.28 [4612:4616:1127/180443:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:04:43.28 [4612:4616:1127/180443:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:04:44.14 [4612:4616:1127/180444:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:04:44.14 [4612:4616:1127/180444:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:04:44.14 [4612:4616:1127/180444:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:04:44.37 [4612:4616:1127/180444:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:04:44.37 [4612:4616:1127/180444:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:04:44.37 [4612:4616:1127/180444:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:04:44.45 [4612:4616:1127/180444:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:04:44.45 [4612:4616:1127/180444:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:04:44.45 [4612:4616:1127/180444:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:05:28.55 [4612:4616:1127/180528:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:05:28.55 [4612:4616:1127/180528:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:05:28.55 [4612:4616:1127/180528:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:05:31.26 [4612:4616:1127/180531:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:05:31.26 [4612:4616:1127/180531:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:05:31.26 [4612:4616:1127/180531:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:05:31.28 [4612:4616:1127/180531:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:05:31.28 [4612:4616:1127/180531:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:05:31.28 [4612:4616:1127/180531:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:05:31.67 [4612:4616:1127/180531:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:05:31.67 [4612:4616:1127/180531:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:05:31.67 [4612:4616:1127/180531:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:06:38.19 [4612:4616:1127/180638:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:06:38.19 [4612:4616:1127/180638:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:06:38.19 [4612:4616:1127/180638:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:07:47.19 [4612:4616:1127/180747:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:07:47.19 [4612:4616:1127/180747:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:07:47.19 [4612:4616:1127/180747:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:07:47.32 [4612:4616:1127/180747:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:07:47.32 [4612:4616:1127/180747:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:07:47.32 [4612:4616:1127/180747:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:08:38.24 [4612:4616:1127/180838:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:08:38.25 [4612:4616:1127/180838:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:08:38.25 [4612:4616:1127/180838:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:08:38.37 [4612:4616:1127/180838:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:08:38.37 [4612:4616:1127/180838:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:08:38.37 [4612:4616:1127/180838:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 27, 2016 18:08:49.57 [4612:4616:1127/180849:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:08:49.57 [4612:4616:1127/180849:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:08:49.57 [4612:4616:1127/180849:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:09:41.53 [4612:4616:1127/180941:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:09:41.53 [4612:4616:1127/180941:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:09:41.53 [4612:4616:1127/180941:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:09:58.51 [4612:4616:1127/180958:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:09:58.51 [4612:4616:1127/180958:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:09:58.51 [4612:4616:1127/180958:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:09:58.51 [4612:4616:1127/180958:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:09:58.51 [4612:4616:1127/180958:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:09:58.51 [4612:4616:1127/180958:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:09:58.65 [4612:4616:1127/180958:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:09:58.65 [4612:4616:1127/180958:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:09:58.65 [4612:4616:1127/180958:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:11:38.83 [4612:4616:1127/181138:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:11:38.83 [4612:4616:1127/181138:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:11:38.83 [4612:4616:1127/181138:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:12:53.92 [4612:4616:1127/181253:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:12:53.92 [4612:4616:1127/181253:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:12:53.92 [4612:4616:1127/181253:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:14:44.68 [4612:4616:1127/181444:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:14:44.68 [4612:4616:1127/181444:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:14:44.68 [4612:4616:1127/181444:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:21:11.16 [4612:4616:1127/182111:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:21:11.17 [4612:4616:1127/182111:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:21:11.17 [4612:4616:1127/182111:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:21:12.09 [4612:4616:1127/182112:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:21:12.09 [4612:4616:1127/182112:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:21:12.09 [4612:4616:1127/182112:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:21:15.68 [4612:4616:1127/182115:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:21:15.68 [4612:4616:1127/182115:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:21:15.68 [4612:4616:1127/182115:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:21:25.43 [4612:4616:1127/182125:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:21:25.43 [4612:4616:1127/182125:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:21:25.43 [4612:4616:1127/182125:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:22:24.21 [4612:4616:1127/182224:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:22:24.21 [4612:4616:1127/182224:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:22:24.21 [4612:4616:1127/182224:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:23:00.93 [4612:4616:1127/182300:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:23:00.93 [4612:4616:1127/182300:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:23:00.93 [4612:4616:1127/182300:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:23:07.03 [4612:4616:1127/182307:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:23:07.03 [4612:4616:1127/182307:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:23:07.03 [4612:4616:1127/182307:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:23:17.42 [4612:4616:1127/182317:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:23:17.42 [4612:4616:1127/182317:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:23:17.42 [4612:4616:1127/182317:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:47:54.95 [4612:4616:1127/184754:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:47:54.95 [4612:4616:1127/184754:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:47:54.95 [4612:4616:1127/184754:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:48:32.52 [4612:4616:1127/184832:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:48:32.52 [4612:4616:1127/184832:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:48:32.52 [4612:4616:1127/184832:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:49:19.87 [4612:4616:1127/184919:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:49:19.87 [4612:4616:1127/184919:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:49:19.87 [4612:4616:1127/184919:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:49:20.38 [4612:4616:1127/184920:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:49:20.38 [4612:4616:1127/184920:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:49:20.38 [4612:4616:1127/184920:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:49:33.20 [4612:4616:1127/184933:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:49:33.20 [4612:4616:1127/184933:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:49:33.20 [4612:4616:1127/184933:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 27, 2016 18:49:41.63 [4612:4616:1127/184941:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:49:41.63 [4612:4616:1127/184941:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:49:41.63 [4612:4616:1127/184941:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:49:42.69 [5692:5156:1127/184942:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 27, 2016 18:49:46.17 [5692:5156:1127/184946:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 27, 2016 18:51:18.08 [4612:4616:1127/185118:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:51:18.08 [4612:4616:1127/185118:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:51:18.08 [4612:4616:1127/185118:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:51:18.57 [4612:4616:1127/185118:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:51:18.57 [4612:4616:1127/185118:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:51:18.57 [4612:4616:1127/185118:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:51:57.59 [4612:4616:1127/185157:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:51:57.59 [4612:4616:1127/185157:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:51:57.59 [4612:4616:1127/185157:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:51:57.93 [4612:4616:1127/185157:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:51:57.93 [4612:4616:1127/185157:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:51:57.93 [4612:4616:1127/185157:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:51:57.95 [4612:4616:1127/185157:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:51:57.95 [4612:4616:1127/185157:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:51:57.95 [4612:4616:1127/185157:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:52:11.46 [4612:4616:1127/185211:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:52:11.46 [4612:4616:1127/185211:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:52:11.46 [4612:4616:1127/185211:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:52:11.48 [4612:4616:1127/185211:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:52:11.48 [4612:4616:1127/185211:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:52:11.48 [4612:4616:1127/185211:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:52:17.96 [4612:4616:1127/185217:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:52:17.96 [4612:4616:1127/185217:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:52:17.96 [4612:4616:1127/185217:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:52:17.98 [4612:4616:1127/185217:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:52:17.98 [4612:4616:1127/185217:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:52:17.98 [4612:4616:1127/185217:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:52:17.99 [4612:4616:1127/185217:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:52:17.99 [4612:4616:1127/185217:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:52:17.99 [4612:4616:1127/185217:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:52:17.99 [4612:4616:1127/185217:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:52:17.99 [4612:4616:1127/185217:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:52:17.99 [4612:4616:1127/185217:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:52:18.00 [4612:4616:1127/185218:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:52:18.00 [4612:4616:1127/185218:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:52:18.00 [4612:4616:1127/185218:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:52:18.01 [4612:4616:1127/185218:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:52:18.01 [4612:4616:1127/185218:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:52:18.01 [4612:4616:1127/185218:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:55:48.63 [4612:4616:1127/185548:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:55:48.63 [4612:4616:1127/185548:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:55:48.63 [4612:4616:1127/185548:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:55:53.00 [4612:4616:1127/185553:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:55:53.00 [4612:4616:1127/185553:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:55:53.00 [4612:4616:1127/185553:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 27, 2016 18:56:55.67 [5692:5156:1127/185655:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+nov 27, 2016 18:58:01.70 [4612:4616:1127/185801:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:58:01.70 [4612:4616:1127/185801:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:58:01.70 [4612:4616:1127/185801:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 27, 2016 18:58:06.22 [4612:4616:1127/185806:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:58:06.22 [4612:4616:1127/185806:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:58:06.22 [4612:4616:1127/185806:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:58:07.87 [4612:4616:1127/185807:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:58:07.87 [4612:4616:1127/185807:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:58:07.87 [4612:4616:1127/185807:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:58:07.92 [4612:4616:1127/185807:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:58:07.92 [4612:4616:1127/185807:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:58:07.92 [4612:4616:1127/185807:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:58:08.29 [4612:4616:1127/185808:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:58:08.29 [4612:4616:1127/185808:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:58:08.29 [4612:4616:1127/185808:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:58:15.42 [4612:4616:1127/185815:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:58:15.42 [4612:4616:1127/185815:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:58:15.42 [4612:4616:1127/185815:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:58:17.67 [4612:4616:1127/185817:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:58:17.67 [4612:4616:1127/185817:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:58:17.67 [4612:4616:1127/185817:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:58:17.98 [4612:4616:1127/185817:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:58:17.98 [4612:4616:1127/185817:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:58:17.98 [4612:4616:1127/185817:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 18:58:23.06 [4612:4616:1127/185823:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 18:58:23.06 [4612:4616:1127/185823:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 18:58:23.06 [4612:4616:1127/185823:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:06:05.07 [4612:4616:1127/190605:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:06:05.07 [4612:4616:1127/190605:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:06:05.08 [4612:4616:1127/190605:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:06:06.31 [4612:4616:1127/190606:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:06:06.31 [4612:4616:1127/190606:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:06:06.31 [4612:4616:1127/190606:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:06:06.42 [4612:4616:1127/190606:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:06:06.42 [4612:4616:1127/190606:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:06:06.42 [4612:4616:1127/190606:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:06:06.44 [4612:4616:1127/190606:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:06:06.44 [4612:4616:1127/190606:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:06:06.44 [4612:4616:1127/190606:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:06:20.40 [4612:4616:1127/190620:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:06:20.40 [4612:4616:1127/190620:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:06:20.40 [4612:4616:1127/190620:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:07:05.85 [4612:4616:1127/190705:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:07:05.85 [4612:4616:1127/190705:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:07:05.85 [4612:4616:1127/190705:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:07:06.50 [4612:4616:1127/190706:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:07:06.50 [4612:4616:1127/190706:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:07:06.50 [4612:4616:1127/190706:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:07:08.20 [4612:4616:1127/190708:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:07:08.20 [4612:4616:1127/190708:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:07:08.20 [4612:4616:1127/190708:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:07:12.69 [4612:4616:1127/190712:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:07:12.69 [4612:4616:1127/190712:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:07:12.69 [4612:4616:1127/190712:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:07:13.60 [4612:4616:1127/190713:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:07:13.60 [4612:4616:1127/190713:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:07:13.60 [4612:4616:1127/190713:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:07:24.98 [4612:4616:1127/190724:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:07:24.98 [4612:4616:1127/190724:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:07:24.98 [4612:4616:1127/190724:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:08:23.17 [4612:4616:1127/190823:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:08:23.17 [4612:4616:1127/190823:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:08:23.17 [4612:4616:1127/190823:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:14:25.16 [4612:4616:1127/191425:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:14:25.16 [4612:4616:1127/191425:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:14:25.17 [4612:4616:1127/191425:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:14:25.55 [4612:4616:1127/191425:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:14:25.55 [4612:4616:1127/191425:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:14:25.55 [4612:4616:1127/191425:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:14:28.97 [4612:4616:1127/191428:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:14:28.97 [4612:4616:1127/191428:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:14:28.97 [4612:4616:1127/191428:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+nov 27, 2016 19:14:39.38 [4612:4616:1127/191439:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:14:39.38 [4612:4616:1127/191439:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:14:39.38 [4612:4616:1127/191439:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 19:14:39.52 [4612:4616:1127/191439:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 19:14:39.52 [4612:4616:1127/191439:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 19:14:39.52 [4612:4616:1127/191439:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 20:32:18.55 [4612:4616:1127/203218:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 20:32:18.55 [4612:4616:1127/203218:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 20:32:18.55 [4612:4616:1127/203218:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 20:37:26.54 [4612:4616:1127/203726:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 20:37:26.54 [4612:4616:1127/203726:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 20:37:26.54 [4612:4616:1127/203726:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 20:37:55.14 [4612:4616:1127/203755:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 20:37:55.14 [4612:4616:1127/203755:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 20:37:55.14 [4612:4616:1127/203755:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 20:38:12.59 [4612:4616:1127/203812:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 20:38:12.59 [4612:4616:1127/203812:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 20:38:12.59 [4612:4616:1127/203812:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+nov 27, 2016 20:38:12.59 [4612:4616:1127/203812:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+nov 27, 2016 20:38:12.59 [4612:4616:1127/203812:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+nov 27, 2016 20:38:12.59 [4612:4616:1127/203812:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+
+dez 03, 2016 20:56:28.68 NEW SESSION
+dez 03, 2016 20:56:28.68 [2132:4068:1203/205628:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+dez 03, 2016 20:56:28.75 [2132:4068:1203/205628:ERROR:gl_surface_egl.cc(612)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+dez 03, 2016 20:56:35.12 [1203/205635:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+dez 03, 2016 20:56:35.46 [1084:2816:1203/205635:ERROR:generic_change_processor.cc(391)] Autofill datatype error was encountered: Failed to delete Autofill node. Local data. ActOnChanges@c:\b\build\slave\win-pgo\build\src\components\autofill\core\browser\webdata\autocomplete_syncable_service.cc:394could not find entry matching the lookup criteria.
+dez 03, 2016 20:56:35.46 [1084:2816:1203/205635:ERROR:generic_change_processor.cc(332)] Delete: Bad entry.
+dez 03, 2016 20:56:35.55 [1084:2816:1203/205635:ERROR:shared_change_processor.cc(202)] Change processor disconnected.
+
+dez 04, 2016 14:17:14.65 NEW SESSION
+dez 04, 2016 14:17:14.65 [1644:108:1204/141714:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+dez 04, 2016 14:17:14.72 [1644:108:1204/141714:ERROR:gl_surface_egl.cc(612)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+dez 04, 2016 14:17:19.72 [1204/141719:ERROR:main_dll_loader_win.cc(196)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+dez 04, 2016 14:17:20.04 [3964:3448:1204/141720:ERROR:generic_change_processor.cc(391)] Autofill datatype error was encountered: Failed to delete Autofill node. Local data. ActOnChanges@c:\b\build\slave\win-pgo\build\src\components\autofill\core\browser\webdata\autocomplete_syncable_service.cc:394could not find entry matching the lookup criteria.
+dez 04, 2016 14:17:20.04 [3964:3448:1204/141720:ERROR:generic_change_processor.cc(332)] Delete: Bad entry.
+dez 04, 2016 14:17:20.11 [3964:3448:1204/141720:ERROR:shared_change_processor.cc(202)] Change processor disconnected.
+dez 04, 2016 14:42:37.90 [1644:108:1204/144237:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+dez 04, 2016 14:42:37.90 [1644:108:1204/144237:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+dez 04, 2016 14:42:37.90 [1644:108:1204/144237:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+dez 04, 2016 14:42:55.75 [1644:108:1204/144255:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+dez 04, 2016 14:42:55.75 [1644:108:1204/144255:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+dez 04, 2016 14:42:55.75 [1644:108:1204/144255:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+dez 04, 2016 14:42:55.89 [1644:108:1204/144255:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+dez 04, 2016 14:42:55.89 [1644:108:1204/144255:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+dez 04, 2016 14:42:55.89 [1644:108:1204/144255:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+dez 04, 2016 14:45:55.87 Vector smash protection is enabled.
+dez 04, 2016 14:45:59.08 [1644:108:1204/144559:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+dez 04, 2016 14:45:59.08 [1644:108:1204/144559:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+dez 04, 2016 14:45:59.08 [1644:108:1204/144559:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+dez 04, 2016 14:47:17.30 A Parser-blocking, cross-origin script, http://ib.adnxs.com/ttj?ttjb=1&bdc=1480869966&bdh=X53qPurAqWPQDKT9pCp9kq_iTnw.&&view_iv=0&view_pos=679,2556&view_ws=1024,589&view_vs=0&bdref=http%3A%2F%2Fwww.coladaweb.com%2Fmatematica%2Fconjuntos-numericos&bdtop=true&bdifs=0&bstk=http%3A%2F%2Fwww.coladaweb.com%2Fmatematica%2Fconjuntos-numericos&&id=8819963, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+dez 04, 2016 14:47:17.35 A Parser-blocking, cross-origin script, http://ib.adnxs.com/ttj?ttjb=1&bdc=1480869966&bdh=X53qPurAqWPQDKT9pCp9kq_iTnw.&&view_iv=0&view_pos=679,2556&view_ws=1024,589&view_vs=0&bdref=http%3A%2F%2Fwww.coladaweb.com%2Fmatematica%2Fconjuntos-numericos&bdtop=true&bdifs=0&bstk=http%3A%2F%2Fwww.coladaweb.com%2Fmatematica%2Fconjuntos-numericos&&id=8819963, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+dez 04, 2016 14:47:17.35 A Parser-blocking, cross-origin script, https://cloud.selectmedia.asia/Code/sm_main_script_streamrail_minified.js?server=production&cv=RoketMedia_BR&campaignId=53601&smcreativeid=53601001, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+dez 04, 2016 14:47:17.35 A Parser-blocking, cross-origin script, https://cloud.selectmedia.asia/Code/sm_main_script_streamrail_minified.js?server=production&cv=RoketMedia_BR&campaignId=53601&smcreativeid=53601001, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+dez 04, 2016 14:47:17.35 A Parser-blocking, cross-origin script, http://live.sekindo.com/live/liveView.php?s=72884&pubUrl=[SRC_URL_ENCODED]&vid_sliderDir=br&vid_viewAction=player&nofr=1&pubUrlAuto=http%3A%2F%2Fwww.coladaweb.com%2Fmatematica%2Fconjuntos-numericos, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+dez 04, 2016 14:47:17.35 A Parser-blocking, cross-origin script, http://live.sekindo.com/live/liveView.php?s=72884&pubUrl=[SRC_URL_ENCODED]&vid_sliderDir=br&vid_viewAction=player&nofr=1&pubUrlAuto=http%3A%2F%2Fwww.coladaweb.com%2Fmatematica%2Fconjuntos-numericos, is invoked via document.write. This may be blocked by the browser if the device has poor network connectivity.
+dez 04, 2016 14:47:17.35 [440:4696:1204/144717:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+dez 04, 2016 14:47:17.59 [1644:108:1204/144717:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+dez 04, 2016 14:47:17.59 [1644:108:1204/144717:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+dez 04, 2016 14:47:17.59 [1644:108:1204/144717:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+dez 04, 2016 14:48:35.83 [440:4696:1204/144835:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+dez 04, 2016 14:48:36.14 [1644:108:1204/144836:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+dez 04, 2016 14:48:36.14 [1644:108:1204/144836:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+dez 04, 2016 14:48:36.14 [1644:108:1204/144836:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+dez 04, 2016 14:49:54.36 [440:4696:1204/144954:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+dez 04, 2016 14:49:54.67 [1644:108:1204/144954:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+dez 04, 2016 14:49:54.67 [1644:108:1204/144954:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+dez 04, 2016 14:49:54.67 [1644:108:1204/144954:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+dez 04, 2016 14:51:12.88 [440:4696:1204/145112:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+dez 04, 2016 14:51:13.19 [1644:108:1204/145113:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+dez 04, 2016 14:51:13.19 [1644:108:1204/145113:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+dez 04, 2016 14:51:13.19 [1644:108:1204/145113:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+dez 04, 2016 14:52:31.42 [440:4696:1204/145231:ERROR:ffmpeg_demuxer.cc(1595)] OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+dez 04, 2016 14:52:31.71 [1644:108:1204/145231:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1333
+dez 04, 2016 14:52:31.71 [1644:108:1204/145231:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+dez 04, 2016 14:52:31.71 [1644:108:1204/145231:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+
+jan 14, 2017 22:29:53.43 NEW SESSION
+jan 14, 2017 22:29:53.43 [4848:4012:0114/222953:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+jan 14, 2017 22:29:53.50 [4848:4012:0114/222953:ERROR:gl_surface_egl.cc(620)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+jan 14, 2017 22:29:54.94 [4548:2336:0114/222954:ERROR:generic_change_processor.cc(397)] Autofill datatype error was encountered: Failed to delete Autofill node. Local data. ActOnChanges@c:\b\build\slave\win-pgo\build\src\components\autofill\core\browser\webdata\autocomplete_syncable_service.cc:394could not find entry matching the lookup criteria.
+jan 14, 2017 22:29:54.94 [4548:2336:0114/222954:ERROR:generic_change_processor.cc(335)] Delete: Bad entry.
+jan 14, 2017 22:29:55.04 [4548:2336:0114/222955:ERROR:shared_change_processor.cc(196)] Change processor disconnected.
+jan 14, 2017 22:50:27.35 [4848:4012:0114/225027:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1338
+jan 14, 2017 22:50:27.36 [4848:4012:0114/225027:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+jan 14, 2017 22:50:27.36 [4848:4012:0114/225027:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 0
+jan 14, 2017 22:50:31.88 [4848:4012:0114/225031:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1338
+jan 14, 2017 22:50:31.88 [4848:4012:0114/225031:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+jan 14, 2017 22:50:31.88 [4848:4012:0114/225031:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+jan 14, 2017 22:50:32.15 [4848:4012:0114/225032:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 1338
+jan 14, 2017 22:50:32.15 [4848:4012:0114/225032:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 604
+jan 14, 2017 22:50:32.15 [4848:4012:0114/225032:ERROR:gpu_video_decode_accelerator.cc(365)] HW video decode not available for profile 1
+
+jan 30, 2017 24:09:50.79 NEW SESSION
+jan 30, 2017 24:09:50.79 [5188:5880:0130/000950:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+jan 30, 2017 24:09:50.82 [5188:5880:0130/000950:ERROR:gl_surface_egl.cc(620)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+jan 30, 2017 24:10:01.24 [4600:3584:0130/001001:ERROR:generic_change_processor.cc(397)] Autofill datatype error was encountered: Failed to delete Autofill node. Local data. ActOnChanges@c:\b\build\slave\win-pgo\build\src\components\autofill\core\browser\webdata\autocomplete_syncable_service.cc:394could not find entry matching the lookup criteria.
+jan 30, 2017 24:10:01.24 [4600:3584:0130/001001:ERROR:generic_change_processor.cc(335)] Delete: Bad entry.
+jan 30, 2017 24:10:01.69 [4600:3584:0130/001001:ERROR:shared_change_processor.cc(196)] Change processor disconnected.
+
+fev 12, 2017 22:20:30.87 NEW SESSION
+fev 12, 2017 22:20:30.87 [448:4576:0212/222030.870:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+fev 12, 2017 22:20:30.88 [448:4576:0212/222030.872:ERROR:gl_surface_egl.cc(646)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+fev 13, 2017 02:40:58.48 Vector smash protection is enabled.
+fev 13, 2017 02:41:40.87 [WARNING:..\..\..\..\flash\platform\pepper\pep_module.cpp(63)] SANDBOXED
+
+mar 13, 2017 02:33:51.22 NEW SESSION
+mar 13, 2017 02:33:51.22 [5276:5280:0313/023351.224:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+mar 13, 2017 02:33:51.24 [5276:5280:0313/023351.226:ERROR:gl_surface_egl.cc(646)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+
+mar 15, 2017 22:08:43.35 NEW SESSION
+mar 15, 2017 22:08:43.35 [5780:5784:0315/220843.357:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+mar 15, 2017 22:08:43.38 [5780:5784:0315/220843.357:ERROR:gl_surface_egl.cc(646)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+mar 15, 2017 22:20:56.69 [WARNING:..\..\..\..\flash\platform\pepper\pep_module.cpp(63)] SANDBOXED
+
+mar 21, 2017 14:11:42.83 NEW SESSION
+mar 21, 2017 14:11:42.83 [6060:2384:0321/141142.834:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 5: DXGI 1.2 required to present to HWNDs owned by another process.
+mar 21, 2017 14:11:42.85 [6060:2384:0321/141142.834:ERROR:gl_surface_egl.cc(646)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+
+abr 11, 2017 24:48:49.66 NEW SESSION
+abr 11, 2017 24:48:49.66 [5368:3592:0411/004849.662:ERROR:angle_platform_impl.cc(33)] ANGLE Display::initialize error 0: No available renderers.
+abr 11, 2017 24:48:49.67 [5368:3592:0411/004849.664:ERROR:gl_surface_egl.cc(676)] eglInitialize D3D11 failed with error EGL_NOT_INITIALIZED, trying next display type
+abr 11, 2017 24:48:49.75 [5368:3592:0411/004849.699:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain

@@ -1,0 +1,18 @@
+{
+  "uuid": "83c269ee-cbab-37f7-82fa-e74a704b32fc",
+  "name": "public_static_method",
+  "description": "public static method",
+  "extraSearchTerms": [],
+  "tags": [
+    "java"
+  ],
+  "code": "public static ${return_type} ${name}(${}) {\n\t${cursor}\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

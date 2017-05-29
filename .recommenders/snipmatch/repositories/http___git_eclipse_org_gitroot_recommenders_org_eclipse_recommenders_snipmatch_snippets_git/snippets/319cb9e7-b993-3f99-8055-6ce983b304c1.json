@@ -1,0 +1,25 @@
+{
+  "uuid": "319cb9e7-b993-3f99-8055-6ce983b304c1",
+  "name": "Button",
+  "description": "new SWT Button",
+  "extraSearchTerms": [],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${buttonType:newType(org.eclipse.swt.widgets.Button)} ${button:newName(org.eclipse.swt.widgets.Button)}\u003d new ${buttonType}(${parent:var(org.eclipse.swt.widgets.Composite)}, ${style:link(SWT.PUSH, SWT.TOGGLE, SWT.RADIO, SWT.CHECK, SWT.FLAT)});\n${button}.setLayoutData(new ${type:newType(org.eclipse.swt.layout.GridData)}(SWT.${horizontal:link(BEGINNING, CENTER, END, FILL)}, SWT.${vertical:link(CENTER, TOP, BOTTOM, FILL)}, ${hex:link(false, true)}, ${vex:link(false, true)}));\n${button}.setText(${word_selection}${});\n${button}.addSelectionListener(new SelectionAdapter() {\n\t\t\t@Override\n\t\t\tpublic void widgetSelected(SelectionEvent e) {\n\t\t\t\t${listener:link(\u0027\u0027)}\n\t\t\t}\n\t\t});\n${imp:import(org.eclipse.swt.SWT, org.eclipse.swt.events.SelectionAdapter, org.eclipse.swt.events.SelectionEvent)}${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

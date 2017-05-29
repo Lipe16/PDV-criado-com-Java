@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+	<h:form id="formTabela">
+		<p:panel header="Estados Listagem">
+
+			<!--  Criação de tabela com prime faces  -->
+			<p:dataTable emptyMessage="Nenhum registro encontrado"
+				paginator="true" value="#{estadoBean.estados}" var="cursorEstado" rows="5">
+
+				<f:facet name="header">
+					<p:commandButton value="Novo"
+						oncomplete="PF('dialogoEstado').show();"
+						actionListener="#{estadoBean.novo()}" update=":formCadastro" />
+				</f:facet>
+
+				<p:column headerText="Nome" sortBy="#{cursorEstado.nome}" filterBy="#{cursorEstado.nome}">
+					<h:outputText value="#{cursorEstado.nome}" />
+				</p:column>
+
+				<p:column headerText="Sigla" sortBy="#{cursorEstado.sigla}">
+					<h:outputText value="#{cursorEstado.sigla}" />
+				</p:column>
+
+				<p:column headerText="Opções">
+					<!-- botão só despara se  dialogo for confirmado positivamente-->
+					<p:commandButton icon="ui-icon-trash" actionListener="#{estadoBean.excluir}"  update=":mensagem :formTabela">	
+						<p:confirm header="Confirmação" message="Deseja apagar o estado?" icon="ui-icon-alert" />
+    					<f:attribute name="estadoSelecionado" value="#{cursorEstado}"/>
+    				</p:commandButton>
+				</p:column>
+
+			</p:dataTable>
+			
+				<!-- janela de confirmação global, para qualquer confirmação na página -->
+				<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+        			<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+				</p:confirmDialog>
+
+		</p:panel>
+	</h:form>
+
+	<!--  janela de dialogo com prime faces  -->
+	<p:dialog widgetVar="dialogoEstado" closable="false" modal="true"
+		resizable="false">
+		<h:form id="formCadastro">
+			<h:panelGrid columns="2">
+				<p:outputLabel value="Nome: " />
+				<p:inputText value="#{estadoBean.estado.nome}" maxlength="50"
+					size="30" />
+
+				<p:outputLabel value="Sigla: " />
+				<p:inputText value="#{estadoBean.estado.sigla}" maxlength="2"
+					size="2" />
+			</h:panelGrid>
+
+			<h:panelGrid columns="2">
+				<p:commandButton value="Salvar"
+					actionListener="#{estadoBean.salvar()}"
+					update=":mensagem :formCadastro :formTabela" />
+				<p:commandButton value="fechar"
+					oncomplete="PF('dialogoEstado').hide();" />
+			</h:panelGrid>
+		</h:form>
+	</p:dialog>
+
+	</ui:define>
+</ui:composition>

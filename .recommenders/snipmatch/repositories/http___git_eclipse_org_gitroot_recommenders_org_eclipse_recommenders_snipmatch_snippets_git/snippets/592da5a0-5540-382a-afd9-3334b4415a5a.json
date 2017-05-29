@@ -1,0 +1,27 @@
+{
+  "uuid": "592da5a0-5540-382a-afd9-3334b4415a5a",
+  "name": "Browser",
+  "description": "new Browser",
+  "extraSearchTerms": [
+    "web"
+  ],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${browserType:newType(org.eclipse.swt.browser.Browser)} ${browser:newName(org.eclipse.swt.browser.Browser)}\u003d new ${browserType}(${parent:var(org.eclipse.swt.widgets.Composite)}, ${style:link(SWT.NONE, SWT.MOZILLA)});\n${browser}.setLayoutData(new ${gridDataType:newType(org.eclipse.swt.layout.GridData)}(SWT.${horizontal:link(FILL, BEGINNING, CENTER, END)}, SWT.${vertical:link(FILL, TOP, CENTER, BOTTOM)}, ${hex:link(true, false)}, ${vex:link(true, false)}));\n${browser}.setUrl(${word_selection}${});\n${imp:import(org.eclipse.swt.SWT)}${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

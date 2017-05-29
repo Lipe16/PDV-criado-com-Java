@@ -1,0 +1,27 @@
+{
+  "uuid": "a70c9166-e519-41d1-aa3a-0e2480afe511",
+  "name": "Reading an Eclipse extension point",
+  "description": "Shows how to obtain the extension registry, fetch all extensions of a specified extension point",
+  "extraSearchTerms": [
+    "IExtensionRegistry",
+    "IExtensionPoint",
+    "IConfigurationElement"
+  ],
+  "tags": [
+    "eclipse"
+  ],
+  "code": "IExtensionRegistry ${registry:newName(org.eclipse.core.runtime.IExtensionRegistry)} \u003d Platform.getExtensionRegistry();\nIExtensionPoint ${extpoint:newName(org.eclipse.core.runtime.IExtensionPoint)} \u003d ${registry}.getExtensionPoint(${id:link(\u0027\"extension point id\"\u0027, \u0027\"org.eclipse.ui.views\"\u0027)});\nfor (IExtension ${ext:newName(org.eclipse.core.runtime.IExtension)} : ${extpoint}.getExtensions()) {\n    for (IConfigurationElement ${config:newName(org.eclipse.core.runtime.IConfigurationElement)} : ${ext}.getConfigurationElements()) {\n\tObject ${executable} \u003d ${config}.createExecutableExtension(${propertyName:link(\u0027\"property name\"\u0027, \u0027\"class\"\u0027)});\n       // ...\n    }\n}\n${:import(org.eclipse.core.runtime.IConfigurationElement, org.eclipse.core.runtime.IExtension, org.eclipse.core.runtime.IExtensionPoint, org.eclipse.core.runtime.IExtensionRegistry, org.eclipse.core.runtime.Platform)}${cursor}\n",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.equinox",
+      "artifactId": "org.eclipse.equinox.registry",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

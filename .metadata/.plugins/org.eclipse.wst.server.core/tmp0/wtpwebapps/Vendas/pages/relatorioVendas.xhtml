@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+		<h:form id="formTabela">
+			<p:panel header="Relatório de vendas">
+				<p:dataTable emptyMessage="Nenhum registro encontrado"
+					rows="5" paginator="true" value="#{relatorioVendasBean.vendas}" var="cursorVenda">
+					
+						<f:facet name="header">
+							<p:outputLabel value="Data Inicio:" />
+							<p:calendar pattern="dd/MM/yyyy HH:mm:ss" value="#{relatorioVendasBean.dataInicio}"/>
+							<p:outputLabel value="Data Fim:" />
+							<p:calendar pattern="dd/MM/yyyy HH:mm:ss" value="#{relatorioVendasBean.dataFim}"/>
+							<p:commandButton value="pesquisar" actionListener="#{relatorioVendasBean.listarPorData()}" update=":formTabela" />
+						</f:facet>
+					
+					
+					
+					<p:column headerText="Código">
+						<h:outputText value="#{cursorVenda.codigo}" />
+					</p:column>
+					<p:column headerText="Data">
+						<h:outputText value="#{cursorVenda.horario}" />
+					</p:column>
+					<p:column headerText="Valor">
+						<h:outputText value="#{cursorVenda.valorTotal}" />
+					</p:column>
+	
+				</p:dataTable>
+				
+			</p:panel>
+		</h:form>
+		
+		<!--
+	<p:chart id="grafico" type="bar" model="#{relatorioVendasBean.model}" />
+		-->
+	
+	</ui:define>
+</ui:composition>

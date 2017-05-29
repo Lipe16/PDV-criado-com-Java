@@ -1,0 +1,21 @@
+{
+  "uuid": "b6685f2e-f135-4666-a0a9-e964f1439d2c",
+  "name": "Convert Node to String",
+  "description": "Converts an XML Node to a String",
+  "extraSearchTerms": [
+    "Document",
+    "DOM"
+  ],
+  "tags": [
+    "xml"
+  ],
+  "code": "StringWriter ${result:newName(java.io.StringWriter)} \u003d new StringWriter();\r\nTransformer ${transformer:newName(javax.xml.transform.Transformer)} \u003d TransformerFactory.newInstance().newTransformer();\r\n${transformer}.transform(new DOMSource(${node:var(org.w3c.dom.Node)}), new StreamResult(${result}));\r\nString ${xml:newName(java.lang.String)} \u003d ${result}.toString();\r\n${import:import(java.io.StringWriter, javax.xml.transform.Transformer, javax.xml.transform.TransformerFactory, javax.xml.transform.dom.DOMSource, javax.xml.transform.stream.StreamResult, org.w3c.dom.Node)}${cursor}\r\n",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

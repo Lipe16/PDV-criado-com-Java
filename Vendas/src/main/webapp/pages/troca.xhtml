@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+		<h:form id="formTabela">
+			<p:panel header="TROCAS">
+			
+			<!--  Criação de tabela com prime faces  -->
+			<p:dataTable id="checkboxDT" scrollable="true" scrollHeight="280"
+			emptyMessage="Nenhum registro encontrado"
+			value="#{itemDeVendaTrocaBean.itensDaVendaDaTroca}" var="itemVenda" selection="#{itemDeVendaTrocaBean.itensSelecionadosParaTroca}" rowKey="#{itemVenda.codigo}"  >
+				
+			<p:column selectionMode="multiple" style="width:16px;text-align:center"/>
+					
+						<f:facet name="header">
+							<p:outputLabel value="Código da venda:" />
+							<p:inputText value="#{itemDeVendaTrocaBean.codigo}"/>
+							<p:commandButton update=":mensagem :formTabela" actionListener="#{itemDeVendaTrocaBean.buscarItensDaVenda()}"  icon="ui-icon-circle-plus"/>
+						</f:facet>
+					
+					
+					<p:column headerText="Código da venda">
+						<h:outputText value="#{itemVenda.venda.codigo}" />
+					</p:column>
+					<p:column headerText="Código do item vendido">
+						<h:outputText value="#{itemVenda.codigo}" />
+					</p:column>
+					<p:column headerText="Produto">
+						<h:outputText value="#{itemVenda.produto.descricao}" />
+					</p:column>
+					<p:column headerText="Data">
+						<h:outputText value="#{itemVenda.venda.horario}" />
+					</p:column>
+					<p:column headerText="Quantidade">
+						<h:outputText value="#{itemVenda.quantidade}" />
+					</p:column>
+					<p:column headerText="Valor">
+						<h:outputText value="#{itemVenda.valorParcial}" />
+					</p:column>
+					
+					
+						<f:facet name="footer">
+							<p:commandButton value="TROCAR" update=":mensagem :formTabela :formDialogo" actionListener="#{itemDeVendaTrocaBean.valorTotalTroca}"  oncomplete="PF('dialogo').show();"/>
+						</f:facet>
+	
+				</p:dataTable>
+				
+			</p:panel>
+		</h:form>
+		
+		
+		
+		
+		
+		
+		<!--  janela de dialogo -->
+		<p:dialog widgetVar="dialogo" header="Finalizar"
+			closable="false" modal="true" resizable="false">
+			<h:form id="formDialogo">
+				<h:panelGrid columns="2">
+					<p:outputLabel value="Valor da troca: " />
+					<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalTroca}" />
+						
+							
+							
+							<p:outputLabel value="Cliente: " />
+							<p:selectOneMenu filter="true"  value="#{itemDeVendaTrocaBean.cliente}" 
+							converter="omnifaces.SelectItemsConverter">
+								<f:selectItem  noSelectionOption="true" itemLabel="Selecione um cliente" />
+								<f:selectItems value="#{clienteBean.clientes}" var="cliente" 
+								itemValue="#{cliente}" itemLabel="#{cliente.pessoa.nome} - #{cliente.codigo}"/>
+							</p:selectOneMenu>
+					
+					
+					
+							<p:outputLabel value="Funcionario: " />
+							<p:selectOneMenu filter="true"  value="#{itemDeVendaTrocaBean.funcionario}" 
+							converter="omnifaces.SelectItemsConverter">
+								<f:selectItem  noSelectionOption="true" itemLabel="Selecione um funcionario" />
+								<f:selectItems value="#{funcionarioBean.funcionarios}" var="funcionario" 
+								itemValue="#{funcionario}" itemLabel="#{funcionario.pessoa.nome} - #{funcionario.codigo}"/>
+							</p:selectOneMenu>
+							
+					</h:panelGrid>
+					
+					<h:panelGrid columns="3">
+						<p:inputText  value="#{itemDeVendaTrocaBean.codigoProduto}" name="codigo" style="width:86%;" />
+						<p:inputText style="width:6%" value="#{itemDeVendaTrocaBean.quantidade}"/>
+						<p:commandButton update=":mensagem :formDialogo " actionListener="#{itemDeVendaTrocaBean.adicionarItem()}"  icon="ui-icon-circle-plus">
+						</p:commandButton>
+					</h:panelGrid>
+					
+					
+					
+							<p:panel header="VENDAS">
+							
+								<!--  Criação de tabela com prime faces  -->
+								<p:dataTable editable="true" scrollable="true" scrollHeight="260"
+								emptyMessage="Nenhum registro encontrado"
+								value="#{itemDeVendaTrocaBean.itensNovaVenda}" var="itemNovaVenda"  >
+									
+									<p:ajax event="rowEdit" listener="#{itemDeVendaTrocaBean.editarValorDoItem}" update=":mensagem" />
+       								<p:ajax event="rowEditCancel" listener="#{itemDeVendaTrocaBean.cancelarValorDoItem}" />
+ 
+									
+									<p:column headerText="Descricao">
+										<h:outputText value="#{itemNovaVenda.produto.descricao}" />
+									</p:column>
+									
+									<p:column headerText="Fabricante">
+										<h:outputText value="#{itemNovaVenda.produto.fabricante.descricao}" />
+									</p:column>
+									
+									<p:column headerText="QTD">
+										<h:outputText value="#{itemNovaVenda.quantidade}" />
+									</p:column>
+									
+
+									<p:column headerText="Preço">
+								           <p:cellEditor>
+								               <f:facet name="output">
+								               		<h:outputText value="#{itemNovaVenda.produto.preco}" >						
+								               				<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+													</h:outputText>
+												</f:facet>
+								               <f:facet name="input">
+								               		<p:inputText value="#{itemNovaVenda.produto.preco}" style="width:80px" label="Preco"
+														 	size="10"
+															required="true"
+															requiredMessage="O campo 'Preço' é obrigatório"
+															converterMessage="Informe um valor válido para o campo 'Preço'"
+															validatorMessage="Informe um valor entre 0,01 e 9999,99 para o campo 'Preço'">
+															<f:validateDoubleRange minimum="0.01" maximum="9999.99" />
+															<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+													</p:inputText>
+								               		</f:facet>
+								           </p:cellEditor>
+								      </p:column>
+														
+									
+									<p:column headerText="Valor Parcial">
+										<h:outputText value="#{itemNovaVenda.valorParcial}" />
+									</p:column>
+									
+									<p:column headerText="Alterar preço" style="width:50px">
+							           <p:rowEditor />
+							       </p:column>
+									
+									<p:column headerText="Opções">
+										<p:commandButton update=":formDialogo :mensagem " icon="ui-icon-refresh"/>
+									<!-- botão só despara se  dialogo for confirmado positivamente-->
+										<p:commandButton icon="ui-icon-trash" actionListener="#{itemDeVendaTrocaBean.excluir}"  update=":mensagem :formTabela :formDialogo">	
+											<p:confirm header="Confirmação" message="Deseja apagar o produto" icon="ui-icon-alert" />
+					    					<f:attribute name="itemSelecionado" value="#{itemNovaVenda}"/>
+					    				</p:commandButton>
+									</p:column>
+									
+									
+									<f:facet name="footer">
+										<p:outputLabel value="Valor da nova venda: " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalNovaVenda}" />
+								
+										<p:commandButton value="Dinheiro" update=":mensagem :formTabela :formDialogo :formFinalizarEmDinheiro"  oncomplete="PF('dialogoFinalizarDinheiro').show();" actionListener="#{itemDeVendaTrocaBean.valorDaDiferenca()}"/>
+										<p:commandButton value="Crediario" update=":mensagem :formTabela :formDialogo :formFinalizarEmCrediario"  oncomplete="PF('dialogoFinalizarCreadiario').show();" actionListener="#{itemDeVendaTrocaBean.valorDaDiferenca()}"/>
+										<p:commandButton value="C. Débito" update=":mensagem :formTabela :formDialogo :formFinalizarEmCartaoD"  oncomplete="PF('dialogoFinalizarCartaoD').show();" actionListener="#{itemDeVendaTrocaBean.valorDaDiferenca()}"/>
+										<p:commandButton value="C. Crédito" update=":mensagem :formTabela :formDialogo :formFinalizarEmCartaoC"  oncomplete="PF('dialogoFinalizarCartaoC').show();" actionListener="#{itemDeVendaTrocaBean.valorDaDiferenca()}"/>
+										
+										
+										<p:commandButton value="Cancelar" update=":mensagem :formTabela :formDialogo"  oncomplete="PF('dialogo').hide();"/>
+										
+									</f:facet>
+									
+								</p:dataTable>
+								
+							<!-- janela de confirmação global, para qualquer confirmação na página -->
+								<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+								    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+				        			<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+								</p:confirmDialog>
+							</p:panel>
+							
+			</h:form>
+		</p:dialog>
+		
+		
+							<!--  janela de dialogo -->
+							<p:dialog widgetVar="dialogoFinalizarDinheiro" header="Finalizar no dinheiro"
+								closable="false" modal="true" resizable="false">
+								<h:form id="formFinalizarEmDinheiro">
+								
+									<h:panelGrid columns="2">
+									
+										<p:outputLabel value="Valor da troca: " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalTroca}" />
+										
+										<p:outputLabel value="Valor da nova venda: " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalNovaVenda}" />
+										
+										<p:outputLabel value="valor da diferença " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorDaDiferenca}" />
+					
+										<p:commandButton update=":formFinalizarEmDinheiro :mensagem" actionListener="#{itemDeVendaTrocaBean.calcularTroco()}" value="Calcular troco" />	
+										<h:inputText  autocomplete="off" size="8" value="#{itemDeVendaTrocaBean.dinheiroEntrada}">
+											<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+										</h:inputText>
+											
+							 			<p:outputLabel value="Troco: " />
+						
+										<h:inputText id="troco" size="8" disabled="true" value="#{itemDeVendaTrocaBean.troco}">
+											<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+										</h:inputText>
+										
+										
+										<p:commandButton value="Cancelar" update=":mensagem :formTabela :formFinalizarEmDinheiro :formDialogo"  oncomplete="PF('dialogoFinalizarDinheiro').hide();"/>
+										<p:commandButton actionListener="#{itemDeVendaTrocaBean.trocarComDiferencaEmDinheiro()}" value="TROCAR" update=":mensagem :formDialogo :formTabela :formFinalizarEmDinheiro"  oncomplete="PF('dialogoFinalizarDinheiro').hide();"/>
+									</h:panelGrid>
+								</h:form>
+							</p:dialog>	
+							
+							
+							
+							<!--  janela de dialogo -->
+							<p:dialog widgetVar="dialogoFinalizarCreadiario" header="Finalizar no Crediario"
+								closable="false" modal="true" resizable="false">
+								<h:form id="formFinalizarEmCrediario">
+								
+									<h:panelGrid columns="2">
+									
+										<p:outputLabel value="Valor da troca: " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalTroca}" />
+										
+										<p:outputLabel value="Valor da nova venda: " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalNovaVenda}" />
+										
+										<p:outputLabel value="valor da diferença " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorDaDiferenca}" />
+										
+										<p:commandButton actionListener="#{itemDeVendaTrocaBean.calcularParcelas()}" update=":formFinalizarEmCrediario :mensagem" value="Numero De Parcelas" />	
+				
+										<h:inputText  autocomplete="off" size="8" value="#{itemDeVendaTrocaBean.numeroDeParcelas}"/>
+					
+	 									<p:outputLabel value="Forma de pagamento: " />
+
+										<h:inputText id="formaDePagamento" size="8" disabled="true" value="#{itemDeVendaTrocaBean.numeroDeParcelas} de #{itemDeVendaTrocaBean.parcela}"/>
+										
+										
+										<p:commandButton value="Cancelar" update=":mensagem :formTabela :formFinalizarEmCrediario :formDialogo"  oncomplete="PF('dialogoFinalizarCreadiario').hide();"/>
+										<p:commandButton actionListener="#{itemDeVendaTrocaBean.trocarComDiferencaEmC()}" value="TROCAR" update=":mensagem :formTabela :formDialogo :formFinalizarEmCrediario"  oncomplete="PF('dialogoFinalizarCreadiario').hide();"/>
+									</h:panelGrid>
+								</h:form>
+							</p:dialog>		
+		
+		
+									<!--  janela de dialogo -->
+							<p:dialog widgetVar="dialogoFinalizarCartaoD" header="Finalizar no Cartão de Débito"
+								closable="false" modal="true" resizable="false">
+								<h:form id="formFinalizarEmCartaoD">
+								
+									<h:panelGrid columns="2">
+									
+										<p:outputLabel value="Valor da troca: " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalTroca}" />
+										
+										<p:outputLabel value="Valor da nova venda: " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalNovaVenda}" />
+										
+										<p:outputLabel value="valor da diferença " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorDaDiferenca}" />
+
+										<p:commandButton value="Cancelar" update=":mensagem :formTabela  :formFinalizarEmCartaoD :formDialogo"  oncomplete="PF('dialogoFinalizarCartaoD').hide();"/>
+										<p:commandButton actionListener="#{itemDeVendaTrocaBean.trocarComDiferencaEmCD()}" value="TROCAR" update=":mensagem :formTabela :formDialogo :formFinalizarEmCartaoD"  oncomplete="PF('dialogoFinalizarCartaoD').hide();"/>
+									</h:panelGrid>
+								</h:form>
+							</p:dialog>	
+							
+							<!--  janela de dialogo -->
+							<p:dialog widgetVar="dialogoFinalizarCartaoC" header="Finalizar no Cartão de Débito"
+								closable="false" modal="true" resizable="false">
+								<h:form id="formFinalizarEmCartaoC">
+								
+									<h:panelGrid columns="2">
+									
+										<p:outputLabel value="Valor da troca: " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalTroca}" />
+										
+										<p:outputLabel value="Valor da nova venda: " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorTotalNovaVenda}" />
+										
+										<p:outputLabel value="valor da diferença " />
+										<h:inputText disabled="true" size="8" value="#{itemDeVendaTrocaBean.valorDaDiferenca}" />
+
+										<p:commandButton value="Cancelar" update=":mensagem :formTabela :formFinalizarEmCartaoC :formDialogo"  oncomplete="PF('dialogoFinalizarCartaoC').hide();"/>
+										<p:commandButton actionListener="#{itemDeVendaTrocaBean.trocarComDiferencaEmCC()}" value="TROCAR" update=":mensagem :formTabela :formDialogo :formFinalizarEmCartaoC"  oncomplete="PF('dialogoFinalizarCartaoC').hide();"/>
+									</h:panelGrid>
+								</h:form>
+							</p:dialog>	
+	
+	</ui:define>
+</ui:composition>

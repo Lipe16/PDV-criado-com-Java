@@ -1,0 +1,27 @@
+{
+  "uuid": "941f9744-5f63-3b32-8c28-7f5d3e7f8514",
+  "name": "StyledText",
+  "description": "new StyledText ",
+  "extraSearchTerms": [
+    "font"
+  ],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${type:newType(org.eclipse.swt.custom.StyledText)} ${text:newName(org.eclipse.swt.custom.StyledText)}\u003d new ${type}(${parent:var(org.eclipse.swt.widgets.Composite)}, ${style:link(\u0027SWT.V_SCROLL | SWT.H_SCROLL\u0027, \u0027SWT.V_SCROLL | SWT.H_SCROLL | SWT.READ_ONLY\u0027, \u0027SWT.WRAP | SWT.V_SCROLL\u0027, SWT.NONE, SWT.BORDER, SWT.FULL_SELECTION)});\n${text}.setLayoutData(new ${gridDataType:newType(org.eclipse.swt.layout.GridData)}(SWT.${horizontal:link(FILL, BEGINNING, CENTER, END)}, SWT.${vertical:link(FILL, TOP, CENTER, BOTTOM)}, ${hex:link(true, false)}, ${vex:link(true, false)}));\n${text}.setText(${word_selection}${});\n${imp:import(org.eclipse.swt.SWT)}${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

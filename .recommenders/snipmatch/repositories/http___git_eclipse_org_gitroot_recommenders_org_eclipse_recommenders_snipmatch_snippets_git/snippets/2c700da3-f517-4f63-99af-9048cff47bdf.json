@@ -1,0 +1,20 @@
+{
+  "uuid": "2c700da3-f517-4f63-99af-9048cff47bdf",
+  "name": "XML parsing to DOM",
+  "description": "Parse an XML input into a document object model",
+  "extraSearchTerms": [
+    "w3c"
+  ],
+  "tags": [
+    "xml"
+  ],
+  "code": "DocumentBuilderFactory ${factory:newName(javax.xml.parsers.DocumentBuilderFactory)} \u003d DocumentBuilderFactory.newInstance();\nDocumentBuilder ${builder:newName(javax.xml.parsers.DocumentBuilder)} \u003d ${factory}.newDocumentBuilder();\nDocument ${dom:newName(org.w3c.dom.Document)} \u003d ${builder}.parse(${cursor});\n${:import(javax.xml.parsers.DocumentBuilderFactory,javax.xml.parsers.DocumentBuilder,org.w3c.dom.Document)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

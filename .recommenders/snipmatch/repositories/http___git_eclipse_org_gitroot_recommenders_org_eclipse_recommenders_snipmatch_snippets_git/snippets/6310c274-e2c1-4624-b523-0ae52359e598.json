@@ -1,0 +1,25 @@
+{
+  "uuid": "6310c274-e2c1-4624-b523-0ae52359e598",
+  "name": "String",
+  "description": "break string into tokens",
+  "extraSearchTerms": [
+    "StringTokenizer",
+    "parse",
+    "parsing",
+    "text",
+    "tokenize",
+    "lexing"
+  ],
+  "tags": [
+    "java"
+  ],
+  "code": "${tokensType:newType(java.lang.String)}[] ${tokens:link(tokens,parts)} \u003d ${text:var(java.lang.String)}.split(\"\\\\s\");\nfor (${tokensType} ${token:link(token,part)} : ${tokens}) {\n\t${cursor}\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+	<h:form id="formTabela">
+		<p:panel header="Cidades listagem">
+			<p:dataTable emptyMessage="Nenhum registro encontrado"
+				paginator="true" value="#{cidadeBean.cidades}" var="cursorCidade">
+				<f:facet name="header">
+					<p:commandButton value="NOVO"
+						oncomplete="PF('dialogoCidades').show()"
+						actionListener="#{cidadeBean.novo()}"
+						update=":formCadastro" />
+				</f:facet>
+
+				<p:column headerText="Nome">
+					<h:outputText value="#{cursorCidade.nome}" />
+				</p:column>
+				<p:column headerText="Estado">
+					<h:outputText value="#{cursorCidade.estado.nome}" />
+				</p:column>
+
+			</p:dataTable>
+			
+		</p:panel>
+	</h:form>
+
+	<p:dialog widgetVar="dialogoCidades" modal="true" resizable="false"
+		draggable="false">
+		<h:form id="formCadastro">
+			<h:panelGrid columns="2">
+				<h:outputLabel value="Cidade: " />
+				<h:inputText maxlength="50" size="30" value="#{cidadeBean.cidade.nome}" />
+	
+				<h:outputLabel value="Estado: " />
+				<p:selectOneMenu filter="true" value="#{cidadeBean.cidade.estado}" 
+				converter="omnifaces.SelectItemsConverter">
+					<f:selectItem noSelectionOption="true" itemLabel="Selecione um estado" />
+					<f:selectItems  value="#{cidadeBean.estados}" var="estado"
+					 itemValue="#{estado}" itemLabel="#{estado.nome} - #{estado.sigla}"/>
+				</p:selectOneMenu>
+				
+			</h:panelGrid>
+			
+			
+	
+			<h:panelGrid columns="2">
+				<p:commandButton value="Salvar" actionListener="#{cidadeBean.salvar()}"
+						update=":mensagem :formCadastro :formTabela" />
+				<p:commandButton value="fechar"
+					oncomplete="PF('dialogoCidades').hide();" />
+			</h:panelGrid>
+		</h:form>
+	</p:dialog>
+
+	</ui:define>
+</ui:composition>

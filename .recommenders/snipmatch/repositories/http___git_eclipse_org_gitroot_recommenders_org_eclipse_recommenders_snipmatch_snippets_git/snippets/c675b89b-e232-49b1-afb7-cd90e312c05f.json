@@ -1,0 +1,28 @@
+{
+  "uuid": "c675b89b-e232-49b1-afb7-cd90e312c05f",
+  "name": "ElementTreeSelectionDialog",
+  "description": "Select elements out of a tree structure",
+  "extraSearchTerms": [
+    "selection",
+    "dialog"
+  ],
+  "tags": [
+    "eclipse",
+    "jface",
+    "swt"
+  ],
+  "code": "ElementTreeSelectionDialog ${dialog:newName(org.eclipse.ui.dialogs.ElementTreeSelectionDialog)} \u003d new ElementTreeSelectionDialog(${shell:var(org.eclipse.swt.widgets.Shell)}, ${lp:var(org.eclipse.jface.viewers.ILabelProvider)}, ${cp:var(org.eclipse.jface.viewers.ITreeContentProvider)});\n${dialog}.setTitle(${title:var(java.lang.String)});\n${dialog}.setMessage(${message:var(java.lang.String)});\n${dialog}.setInput(${cursor});\n${dialog}.create();\n${dialog}.open();\n${:import(org.eclipse.ui.dialogs.ElementTreeSelectionDialog)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.ui",
+      "artifactId": "org.eclipse.ui.workbench",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

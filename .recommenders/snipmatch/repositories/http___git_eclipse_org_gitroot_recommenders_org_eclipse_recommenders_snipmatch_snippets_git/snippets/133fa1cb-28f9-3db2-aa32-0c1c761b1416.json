@@ -1,0 +1,25 @@
+{
+  "uuid": "133fa1cb-28f9-3db2-aa32-0c1c761b1416",
+  "name": "TableColumn",
+  "description": "new TableColumn for a Table ",
+  "extraSearchTerms": [],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widgets"
+  ],
+  "code": "${type:newType(org.eclipse.swt.widgets.TableColumn)} ${column:newName(org.eclipse.swt.widgets.TableColumn)}\u003d new ${type}(${parent:var(org.eclipse.swt.widgets.Table)}, ${style:link(SWT.LEAD, SWT.CENTER, SWT.TRAIL)});\n${column}.setText(${word_selection}${});\n${imp:import(org.eclipse.swt.SWT)}${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

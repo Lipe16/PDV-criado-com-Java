@@ -1,0 +1,25 @@
+{
+  "uuid": "addb3b66-6689-31f9-a561-8dd8d2ddbece",
+  "name": "GridData",
+  "description": "new GridData for a Control",
+  "extraSearchTerms": [],
+  "tags": [
+    "eclipse",
+    "swt",
+    "layout"
+  ],
+  "code": "${gridData:newType(org.eclipse.swt.layout.GridData)} ${layoutData:newName(org.eclipse.swt.layout.GridData)} \u003d new ${gridData}(SWT.${horizontal:link(FILL, BEGINNING, CENTER, END)}, SWT.${vertical:link(FILL, TOP, CENTER, BOTTOM)}, ${hex:link(true, false)}, ${vex:link(false, true)});\n${layoutData}.widthHint\u003d ${width:link(SWT.DEFAULT)};\n${layoutData}.heightHint\u003d ${height:link(SWT.DEFAULT)};\n${parent:var(org.eclipse.swt.widgets.Control)}.setLayoutData(${layoutData});\n${imp:import(org.eclipse.swt.SWT)}${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

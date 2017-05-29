@@ -1,0 +1,32 @@
+{
+  "uuid": "4280975a-3a3e-4f76-8cc2-7ad01e09f35f",
+  "name": "Create a TableViewer with checkboxes",
+  "description": "Creates a table with a checkbox per entry using the JFace viewer framework",
+  "extraSearchTerms": [
+    "item"
+  ],
+  "tags": [
+    "jface",
+    "eclipse",
+    "ui"
+  ],
+  "code": "CheckboxTableViewer ${viewer:newName(org.eclipse.jface.viewers.CheckboxTableViewer)} \u003d CheckboxTableViewer.newCheckList(${parent:var(org.eclipse.swt.widgets.Composite)}, ${i:link(SWT.BORDER, SWT.NONE)});\n${viewer}.setContentProvider(${contentProvider:var(org.eclipse.jface.viewers.IContentProvider)});\n${viewer}.setLabelProvider(${labelProvider:var(org.eclipse.jface.viewers.IBaseLabelProvider)});\n${viewer}.setInput(${object:var(java.lang.Object)});\n${:import(org.eclipse.jface.viewers.CheckboxTableViewer, org.eclipse.swt.SWT)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "org.eclipse.jface",
+      "artifactId": "org.eclipse.jface",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

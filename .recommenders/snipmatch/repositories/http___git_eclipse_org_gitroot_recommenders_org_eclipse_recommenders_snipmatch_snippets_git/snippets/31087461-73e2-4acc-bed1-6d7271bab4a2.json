@@ -1,0 +1,30 @@
+{
+  "uuid": "31087461-73e2-4acc-bed1-6d7271bab4a2",
+  "name": "State Location",
+  "description": "Gets the plugin\u0027s state location",
+  "extraSearchTerms": [
+    "bundle"
+  ],
+  "tags": [
+    "eclipse"
+  ],
+  "code": "Bundle ${bundle:newName(org.osgi.framework.Bundle)} \u003d FrameworkUtil.getBundle(${enclosing_type}.class);\nFile ${stateLocation:newName(java.io.File)} \u003d Platform.getStateLocation(${bundle}).toFile();\n${import:import(java.io.File, org.eclipse.core.runtime.Platform, org.osgi.framework.Bundle, org.osgi.framework.FrameworkUtil)}${cursor}\n",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.osgi",
+      "artifactId": "org.eclipse.osgi",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "org.eclipse.core",
+      "artifactId": "org.eclipse.core.runtime",
+      "version": "0.0.0"
+    }
+  ]
+}

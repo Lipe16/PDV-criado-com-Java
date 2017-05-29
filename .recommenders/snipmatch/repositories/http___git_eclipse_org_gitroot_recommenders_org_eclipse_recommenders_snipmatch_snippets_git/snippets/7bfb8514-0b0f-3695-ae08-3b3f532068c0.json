@@ -1,0 +1,20 @@
+{
+  "uuid": "7bfb8514-0b0f-3695-ae08-3b3f532068c0",
+  "name": "for",
+  "description": "iterate over array",
+  "extraSearchTerms": [
+    "loop"
+  ],
+  "tags": [
+    "java"
+  ],
+  "code": "for (int ${index} \u003d 0; ${index} \u003c ${array}.length; ${index}++) {\n\t${line_selection}${cursor}\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

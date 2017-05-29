@@ -1,0 +1,20 @@
+{
+  "uuid": "27f9ebab-d3c3-4fd1-b4c7-95f1b57b62c5",
+  "name": "Sleep",
+  "description": "Make current thread sleep",
+  "extraSearchTerms": [
+    "wait"
+  ],
+  "tags": [
+    "jre"
+  ],
+  "code": "try {\n\tThread.sleep(${millis:var(int,long)});\n} catch (InterruptedException ${exception_variable_name}) {\n\t${cursor}\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

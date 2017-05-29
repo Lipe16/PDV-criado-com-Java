@@ -1,0 +1,19 @@
+{
+  "uuid": "dae20ad4-a02a-4c4b-a97e-dfbc051c1b61",
+  "name": "Load resource from classpath",
+  "description": "Loads a properties file from classpath bundles, e.g.in a jar file, using getResourceAsStream()",
+  "extraSearchTerms": [],
+  "tags": [
+    "io",
+    "jre"
+  ],
+  "code": "InputStream ${stream:newName(java.io.InputStream)} \u003d ${enclosing_type}.class.getResourceAsStream(\"/resources/resources.properties\");\nProperties ${props:newName(java.util.Properties)} \u003d new Properties();\n${props}.load(${stream});\nObject ${value} \u003d ${props}.get(${propertyName:var(java.lang.String)});\n${:import(java.io.InputStream, java.util.Properties)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

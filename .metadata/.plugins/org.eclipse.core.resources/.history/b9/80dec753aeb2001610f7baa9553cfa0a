@@ -1,0 +1,8 @@
+package com.ciadainformatica.vendas.domain;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Crediario extends GenericDomain{
+
+}

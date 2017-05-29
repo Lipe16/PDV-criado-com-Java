@@ -1,0 +1,18 @@
+{
+  "uuid": "dfe4c854-a788-399c-92d5-b416997933f8",
+  "name": "syserr",
+  "description": "print to standard error",
+  "extraSearchTerms": [],
+  "tags": [
+    "java"
+  ],
+  "code": "System.err.println(${word_selection}${});${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

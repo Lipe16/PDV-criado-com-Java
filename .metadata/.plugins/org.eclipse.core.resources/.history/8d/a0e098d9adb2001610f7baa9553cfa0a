@@ -1,0 +1,5 @@
+package com.ciadainformatica.vendas.domain;
+
+public class Crediario {
+
+}

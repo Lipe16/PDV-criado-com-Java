@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+	<h:form id="formTabela">
+		<p:panel header="Usuarios listagem">
+			<!--  Criação de tabela com prime faces  -->
+			<p:dataTable emptyMessage="Nenhum registro encontrado"
+				rows="15" paginator="true" value="#{usuarioBean.usuarios}" var="usuario">
+				<f:facet name="header">
+					<p:commandButton value="Novo"
+						oncomplete="PF('dialogoUsuario').show();"
+						actionListener="#{usuarioBean.novo()}"
+						update=":formCadastro"  />
+				</f:facet>
+
+				<p:column headerText="Nome">
+					<h:outputText value="#{usuario.pessoa.nome}" />
+				</p:column>
+
+				<p:column headerText="CPF">
+					<h:outputText value="#{usuario.pessoa.cpf}" />
+				</p:column>
+
+				<p:column headerText="Tipo">
+					<h:outputText value="#{usuario.tipo}" />
+				</p:column>
+
+				<p:column headerText="Ativo">
+					<h:outputText value="#{usuario.ativo}" />
+				</p:column>
+
+				<p:column headerText="Opções">
+				<!-- botão só despara se  dialogo for confirmado positivamente-->
+					<p:commandButton icon="ui-icon-trash" actionListener="#{usuarioBean.excluir}"  update=":mensagem :formTabela">	
+						<p:confirm header="Confirmação" message="Deseja apagar o usuario?" icon="ui-icon-alert" />
+    					<f:attribute name="usuarioSelecionado" value="#{usuario}"/>
+    				</p:commandButton>
+				</p:column>
+
+			</p:dataTable>
+			<!-- janela de confirmação global, para qualquer confirmação na página -->
+				<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+        			<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+				</p:confirmDialog>
+		</p:panel>
+	</h:form>
+
+	<!--  janela de dialogo com prime faces  -->
+	<p:dialog widgetVar="dialogoUsuario" header="Novo Usuario"
+		closable="false" modal="true" resizable="false">
+		<h:form id="formCadastro">
+			<h:panelGrid columns="2">
+				<p:outputLabel value="Pessoa: " />
+				<p:selectOneMenu filter="true"  value="#{usuarioBean.usuario.pessoa}" 
+				converter="omnifaces.SelectItemsConverter">
+					<f:selectItem  noSelectionOption="true" itemLabel="Selecione uma pessoa" />
+					<f:selectItems value="#{usuarioBean.pessoas}" var="pessoa" 
+					itemValue="#{pessoa}" itemLabel="#{pessoa.nome} - #{pessoa.cpf}"/>
+				</p:selectOneMenu>
+
+				<p:outputLabel value="Senha:" />
+				<p:password value="#{usuarioBean.usuario.senha}" maxlength="20" size="10" />
+
+				<p:outputLabel value="Tipo:" />
+				<p:selectOneRadio value="#{usuarioBean.usuario.tipo}" >
+					<f:selectItem itemValue="A" itemLabel="Administrador" />
+					<f:selectItem itemValue="G" itemLabel="Gerente" />
+					<f:selectItem itemValue="B" itemLabel="Balconista" />
+				</p:selectOneRadio>
+				
+				<p:outputLabel value="Ativo:" />
+				<p:selectBooleanCheckbox value="#{usuarioBean.usuario.ativo}" />
+				
+			</h:panelGrid>
+
+			<h:panelGrid columns="2">
+				<p:commandButton value="Salvar"  actionListener="#{usuarioBean.salvar()}"
+				update=":mensagem :formCadastro :formTabela" />
+				<p:commandButton value="fechar"
+					oncomplete="PF('dialogoUsuario').hide();" />
+			</h:panelGrid>
+		</h:form>
+	</p:dialog>
+
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,23 @@
+{
+  "uuid": "310c2375-7276-33b9-aadd-7f5324740a89",
+  "name": "test",
+  "description": "test method (JUnit 4)",
+  "extraSearchTerms": [],
+  "tags": [
+    "test"
+  ],
+  "code": "@${testType:newType(org.junit.Test)}\npublic void ${testName}() throws Exception {\n\t${staticImport:importStatic(\u0027org.junit.Assert.*\u0027)}${cursor}\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "dependencies": [
+    {
+      "groupId": "junit",
+      "artifactId": "junit",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

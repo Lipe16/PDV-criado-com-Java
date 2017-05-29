@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+		<h:form id="formTabela">
+		
+
+			<p:panel header="Relatório de crediario">
+				<p:dataTable emptyMessage="Nenhum registro encontrado"
+					rows="5" paginator="true" value="#{dinheiroBean.dinheiro}" var="dinheiro">
+					<f:facet name="header">
+						<p:commandButton value="Sacar Dinheiro do sistema"
+							
+							oncomplete="PF('dialogo').show();"
+							update=":form"  />
+					</f:facet>
+
+					
+					
+					
+					<p:column headerText="Dinheiro">
+						<h:outputText value="#{dinheiro.dinheiro}" />
+					</p:column>
+					
+				</p:dataTable>
+				
+			</p:panel>
+		</h:form>
+		
+		<!--  janela de dialogo com prime faces para CC -->
+		<p:dialog widgetVar="dialogo" header="Sacar dinheiro do sistema"
+			closable="false" modal="true" resizable="false">
+			<h:form id="form">
+				<h:panelGrid columns="2">
+				
+					<p:outputLabel value="Valor a ser sacado" />
+					<h:inputText value="#{dinheiroBean.valorInformado}"
+						size="10"
+						required="true"
+						requiredMessage="O campo de valor a ser sacado é obrigatório"
+						converterMessage="Informe um valor válido para o campo 'Preço'"
+						validatorMessage="Informe um valor entre 0,01 e 9999,99 para o campo 'VALOR A SER SACADO'">
+						<f:validateDoubleRange minimum="0.01" maximum="9999.99" />
+						<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+					</h:inputText>
+						
+		 			<p:commandButton actionListener="#{dinheiroBean.sacarDinheiro()}"  oncomplete="PF('dialogo').hide();"  update=":formTabela :mensagem" value="Finalizar"/>
+		 			<p:commandButton oncomplete="PF('dialogo').hide();" value="Cancelar"/>
+				</h:panelGrid>
+			</h:form>
+		</p:dialog>
+		
+	</ui:define>
+</ui:composition>

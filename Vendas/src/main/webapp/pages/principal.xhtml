@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SiGE</title>
+	<h:outputStylesheet library="css" name="estilo.css" />
+</h:head>
+<h:body>
+	<p:growl id="mensagem" />
+
+	<div id="geral">
+		<div id="topo" class="divTopo">
+			<h:form id="formMenu">
+				<p:dock position="top">
+				    <p:menuitem value="Pessoas" url="pessoas.xhtml" icon="../resources/images/pessoas.png" />
+				    <p:menuitem value="Funcionarios" url="funcionarios.xhtml" icon="../resources/images/funcionarios.png" />
+				    <p:menuitem value="Usuarios" url="usuarios.xhtml" icon="../resources/images/usuarios.png" />
+					<p:menuitem value="Clientes" url="clientes.xhtml" icon="../resources/images/clientes.png" />
+					<p:menuitem value="Cidades" url="cidades.xhtml" icon="../resources/images/cidades.png" />
+					<p:menuitem value="Estados" url="estados.xhtml" icon="../resources/images/estados.png" />
+					<p:menuitem value="Fabricantes" url="fabricantes.xhtml" icon="../resources/images/fabricantes.png" />
+					<p:menuitem value="Produtos" url="produtos.xhtml" icon="../resources/images/produtos.png" />
+					
+					<p:menuitem value="Relatório de vendas" url="relatorioVendas.xhtml" icon="../resources/images/relatorioVendas.png" />
+					<p:menuitem value="Relatório de itens vendidos" url="relatorioItensVendidos.xhtml" icon="../resources/images/relatorioItensVendidos.png" />			
+					<p:menuitem value="Relatório de Vendas Completo" url="relatorioDeTiposDeVendas.xhtml" icon="../resources/images/tipoDeVendas.png" />
+					<p:menuitem value="Relatório de Recebimentos" url="relatorioDeRecebimentos.xhtml" icon="../resources/images/recebimento.png" />
+					<p:menuitem value="Relatório de crediário" url="relatorioCrediario.xhtml" icon="../resources/images/relatorioCrediario.png" />
+					
+					<p:menuitem value="Financeiro" url="financeiro.xhtml" icon="../resources/images/financeiro.png" />	
+					
+					<p:menuitem value="Troca de Produtos" url="troca.xhtml" icon="../resources/images/troca.png" />	
+					<p:menuitem value="Cancelamento de Vendas" url="cancelarVenda.xhtml" icon="../resources/images/cancelar.png" />	
+
+					<p:menuitem value="Crediario" url="crediario.xhtml" icon="../resources/images/crediario.png" />					
+					<p:menuitem value="Vendas" url="vendas.xhtml" icon="../resources/images/vendas.png" />
+					<p:menuitem   actionListener="#{autenticacaoBean.sair()}"  value="Sair" icon="../resources/images/sair.png" />
+				</p:dock>
+			</h:form>
+		</div>
+
+		<div id="conteudo">
+			<ui:insert name="pagina" />
+		</div>
+	</div>
+</h:body>
+</html>

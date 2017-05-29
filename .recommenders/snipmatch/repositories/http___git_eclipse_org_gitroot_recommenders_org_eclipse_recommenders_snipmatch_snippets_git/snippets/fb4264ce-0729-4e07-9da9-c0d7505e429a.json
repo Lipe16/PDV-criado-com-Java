@@ -1,0 +1,25 @@
+{
+  "uuid": "fb4264ce-0729-4e07-9da9-c0d7505e429a",
+  "name": "Add an entry to a ZIP file",
+  "description": "Writes the ToC entry and the raw bytes",
+  "extraSearchTerms": [
+    "jar",
+    "archive",
+    "pack",
+    "compress",
+    "compression"
+  ],
+  "tags": [
+    "jre",
+    "zip"
+  ],
+  "code": "${zipOutputStream:var(java.util.zip.ZipOutputStream)}.putNextEntry(${zipEntry:var(java.util.zip.ZipEntry)});\n${zipOutputStream}.write(${byteArray:var(\u0027byte[]\u0027)});",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

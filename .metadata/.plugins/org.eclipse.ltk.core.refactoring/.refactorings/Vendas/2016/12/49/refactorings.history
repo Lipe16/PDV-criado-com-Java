@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;RelatorioVendasBean.java&apos; to &apos;Vendas/src/test/java/com.ciadainformatica.vendas.dao&apos;&#x0D;&#x0A;- Original project: &apos;Vendas&apos;&#x0D;&#x0A;- Destination element: &apos;Vendas/src/test/java/com.ciadainformatica.vendas.dao&apos;&#x0D;&#x0A;- Original element: &apos;com.ciadainformatica.vendas.bean.RelatorioVendasBean.java&apos;" description="Copy compilation unit" destination="/src\/test\/java&lt;com.ciadainformatica.vendas.dao" element1="/src\/main\/java&lt;com.ciadainformatica.vendas.bean{RelatorioVendasBean.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1480807885188" units="1" version="1.0"/>
+</session>

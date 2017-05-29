@@ -1,0 +1,27 @@
+{
+  "uuid": "6fc50b01-52d0-3ceb-87f6-d78dcd36aee9",
+  "name": "DateTime",
+  "description": "new DateTime",
+  "extraSearchTerms": [
+    "calendar"
+  ],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${dateType:newType(org.eclipse.swt.widgets.DateTime)} ${dateTime:newName(org.eclipse.swt.widgets.DateTime)}\u003d new ${dateType}(${parent:var(org.eclipse.swt.widgets.Composite)}, ${style:link(\u0027SWT.CALENDAR | SWT.SHORT\u0027, \u0027SWT.CALENDAR | SWT.MEDIUM\u0027, \u0027SWT.CALENDAR | SWT.LONG\u0027, \u0027SWT.TIME | SWT.SHORT\u0027, \u0027SWT.TIME | SWT.MEDIUM\u0027, \u0027SWT.TIME | SWT.LONG\u0027, \u0027SWT.DATE | SWT.SHORT\u0027, \u0027SWT.DATE | SWT.MEDIUM\u0027, \u0027SWT.DATE | SWT.LONG\u0027)});\n${dateTime}.setLayoutData(new ${gridDataType:newType(org.eclipse.swt.layout.GridData)}(SWT.${horizontal:link(FILL, BEGINNING, CENTER, END)}, SWT.${vertical:link(FILL, TOP, CENTER, BOTTOM)}, ${hex:link(true, false)}, ${vex:link(true, false)}));\n${imp:import(org.eclipse.swt.SWT)}${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

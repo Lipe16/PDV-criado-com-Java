@@ -1,0 +1,12 @@
+{
+  "uuid": "e4fabbc2-003b-437d-9aee-062330dc1d72",
+  "name": "ifnull",
+  "description": "conditional if (x \u003d\u003d null ) {...}",
+  "extraSearchTerms": [],
+  "tags": [
+    "java"
+  ],
+  "code": "if (${word_selection}${} \u003d\u003d null) {\n\t${cursor}\n}\n",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": []
+}

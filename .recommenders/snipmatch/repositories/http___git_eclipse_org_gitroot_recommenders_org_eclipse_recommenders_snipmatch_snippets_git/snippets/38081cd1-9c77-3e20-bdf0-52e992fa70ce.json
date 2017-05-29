@@ -1,0 +1,27 @@
+{
+  "uuid": "38081cd1-9c77-3e20-bdf0-52e992fa70ce",
+  "name": "ExpandItem",
+  "description": "new ExpandItem for an ExpandBar",
+  "extraSearchTerms": [
+    "collapse"
+  ],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${type:newType(org.eclipse.swt.widgets.ExpandItem)} ${item:newName(org.eclipse.swt.widgets.ExpandItem)}\u003d new ${type}(${parent:var(org.eclipse.swt.widgets.ExpandBar)}, SWT.NONE);\n${item}.setText(${word_selection}${});\n${imp:import(org.eclipse.swt.SWT)}${cursor}\n\n${item}.setControl(${control});\n${item}.setHeight(${control}.computeSize(SWT.DEFAULT, SWT.DEFAULT).y);",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

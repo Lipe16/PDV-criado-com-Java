@@ -1,0 +1,10 @@
+{
+  "uuid": "4e506917-fc09-49c7-b6c7-9087067bdbe7",
+  "name": "@formatter:on/off",
+  "description": "Disable Eclipse code formatter for the selected lines",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "// @formatter:off\n${line_selection}${cursor}\n// @formatter:on\n",
+  "location": "JAVA",
+  "dependencies": []
+}

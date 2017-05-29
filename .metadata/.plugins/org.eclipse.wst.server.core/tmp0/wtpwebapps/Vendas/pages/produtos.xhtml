@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+	<h:form id="formTabela">
+		<p:panel header="Produtos listagem">
+			<!--  Criação de tabela com prime faces  -->
+			<p:dataTable emptyMessage="Nenhum registro encontrado"
+						paginator="true"
+						value="#{produtoBean.produtos}"
+						var="cursorProduto" >
+						
+				<f:facet name="header">
+					<p:commandButton value="Novo"
+						oncomplete="PF('dialogoProduto').show();"
+						actionListener="#{produtoBean.novo()}"
+						update=":formCadastro" />
+				</f:facet>
+
+				<p:column headerText="Código de barras">
+					<h:outputText value="#{cursorProduto.codBarras}" />
+				</p:column>
+
+				<p:column headerText="Descrição">
+					<h:outputText value="#{cursorProduto.descricao}" />
+				</p:column>
+
+				<p:column headerText="Preço">
+					<h:outputText value="#{cursorProduto.preco}">
+						<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+					</h:outputText>
+				</p:column>
+
+				<p:column headerText="Quantidade">
+					<h:outputText value="#{cursorProduto.quantidade}" />
+				</p:column>
+
+				<p:column headerText="Fabricante">
+					<h:outputText value="#{cursorProduto.fabricante.descricao}" />
+				</p:column>
+				<p:column headerText="Opções">
+				<!-- botão só despara se  dialogo for confirmado positivamente-->
+					<p:commandButton actionListener="#{produtoBean.adicionaValor}" icon="ui-icon-plus" oncomplete="PF('dialogoAdicionar').show();"  update=":mensagem :formTabela">	
+    					<f:attribute name="produtoSelecionado"  value="#{cursorProduto}" />
+    				</p:commandButton>
+    				
+    				<!-- botão só despara se  dialogo for confirmado positivamente-->
+					<p:commandButton actionListener="#{produtoBean.adicionaProdutoParaEdicao}" icon="ui-icon-wrench" oncomplete="PF('dialogoEditar').show();"  update=":mensagem :formTabela :formEditar">	
+    					<f:attribute name="produtoSelecionado02"  value="#{cursorProduto}" />
+    				</p:commandButton>
+    				
+				</p:column>
+
+			</p:dataTable>
+			<!-- janela de confirmação global, para qualquer confirmação na página -->
+				<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+        			<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+				</p:confirmDialog>
+		</p:panel>
+	</h:form>
+
+	<!--  janela de dialogo com prime faces  -->
+	<p:dialog widgetVar="dialogoProduto" closable="false" modal="true"
+		resizable="false">
+		<h:form id="formCadastro">
+			<h:panelGrid columns="2">
+				<p:outputLabel value="Cód de barras: " />
+				<p:inputText value="#{produtoBean.produto.codBarras}"  maxlength="25" size="30" />
+				
+			
+				<p:outputLabel value="Descrição: " />
+				<p:inputText value="#{produtoBean.produto.descricao}"  maxlength="80" size="30" />
+
+				<p:outputLabel value="preço:" />
+				<p:inputText value="#{produtoBean.produto.preco}"
+				 	size="10"
+					required="true"
+					requiredMessage="O campo 'Preço' é obrigatório"
+					converterMessage="Informe um valor válido para o campo 'Preço'"
+					validatorMessage="Informe um valor entre 0,01 e 9999,99 para o campo 'Preço'">
+					<f:validateDoubleRange minimum="0.01" maximum="9999.99" />
+					<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+				</p:inputText>
+
+				<p:outputLabel value="Quantidade:" />
+				<p:inputText maxlength="5" size="10"
+					value="#{produtoBean.produto.quantidade}" required="true"
+					requiredMessage="O campo 'Quantidade' é obrigatório"
+					converterMessage="Informe um valor válido para o campo 'Quantidade'"
+					validatorMessage="Informe um valor entre 0 e 1000 para o campo 'Quantidade'">
+					<f:validateLongRange minimum="0" maximum="1000" />
+				</p:inputText>	
+				
+				<p:outputLabel value="Fabricante:" />
+				<p:selectOneMenu filter="true" value="#{produtoBean.produto.fabricante}" 
+				converter="omnifaces.SelectItemsConverter">
+					<f:selectItem noSelectionOption="true" itemLabel="Selecione um fabricante" />
+					<f:selectItems value="#{produtoBean.fabricantes}" var="fabricante" 
+					itemValue="#{fabricante}" itemLabel="#{fabricante.descricao}"/>
+				</p:selectOneMenu>
+
+
+			</h:panelGrid>
+
+			<h:panelGrid columns="2">
+				<p:commandButton value="Salvar" 
+						actionListener="#{produtoBean.salvar()}"
+					update=":mensagem :formCadastro :formTabela"/>
+				<p:commandButton value="fechar"
+					oncomplete="PF('dialogoProduto').hide();" />
+			</h:panelGrid>
+		</h:form>
+	</p:dialog>
+	
+	
+	
+	<p:dialog widgetVar="dialogoAdicionar" closable="false" modal="true"
+		resizable="false">
+		<h:form id="formAdicionar">
+			<h:panelGrid columns="2">
+				<p:outputLabel value="Quantidade: " />
+				<p:inputText value="#{produtoBean.quantidade}" />
+				
+				<p:commandButton value="Adicionar" actionListener="#{produtoBean.adicionarEstoque}" oncomplete="PF('dialogoAdicionar').hide();" update=":mensagem :formCadastro :formTabela"/>
+				<p:commandButton value="fechar" oncomplete="PF('dialogoAdicionar').hide();" />
+			</h:panelGrid>
+		</h:form>
+	</p:dialog>	
+	
+	
+		<p:dialog widgetVar="dialogoEditar" closable="false" modal="true"
+		resizable="false">
+		<h:form id="formEditar">
+			<h:panelGrid columns="2">
+				<p:outputLabel value="Nome: " />
+				<p:inputText disabled="true" value="#{produtoBean.produto.descricao}" />
+				
+				<p:outputLabel value="Valor: " />
+				<p:inputText value="#{produtoBean.produto.preco}"
+				 	size="10"
+					required="true"
+					requiredMessage="O campo 'Valor' é obrigatório"
+					converterMessage="Informe um valor válido para o campo 'valor'"
+					validatorMessage="Informe um valor entre 0,01 e 9999,99 para o campo 'valor'">
+					<f:validateDoubleRange minimum="0.01" maximum="9999.99" />
+					<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+				</p:inputText>
+			
+
+				
+				<p:commandButton value="Editar" actionListener="#{produtoBean.editarPreco()}" oncomplete="PF('dialogoEditar').hide();" update=":mensagem :formEditar :formTabela"/>
+				<p:commandButton value="Fechar" oncomplete="PF('dialogoEditar').hide();" />
+			</h:panelGrid>
+		</h:form>
+	</p:dialog>	
+
+	</ui:define>
+</ui:composition>

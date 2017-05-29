@@ -1,0 +1,20 @@
+{
+  "uuid": "dbcc8bed-823f-39cc-9cdc-a98543a3119e",
+  "name": "do",
+  "description": "do while statement",
+  "extraSearchTerms": [
+    "loop"
+  ],
+  "tags": [
+    "java"
+  ],
+  "code": "do {\n\t${line_selection}${cursor}\n} while (${condition:var(boolean)});",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

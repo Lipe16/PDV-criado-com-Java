@@ -1,0 +1,18 @@
+{
+  "uuid": "78b1f888-75b9-4ab9-977b-6247fe8a41cb",
+  "name": "XML parsing with StAX",
+  "description": "Parse an XML input using a pull parser",
+  "extraSearchTerms": [],
+  "tags": [
+    "xml"
+  ],
+  "code": "XMLInputFactory ${factory:newName(javax.xml.stream.XMLInputFactory)} \u003d XMLInputFactory.newInstance();\nXMLEventReader ${reader:newName(javax.xml.stream.XMLEventReader)} \u003d ${factory}.createXMLEventReader(${input});\nwhile (${reader}.hasNext()) {\n\tXMLEvent ${event:newName(javax.xml.stream.events.XMLEvent)} \u003d ${reader}.nextEvent();\n\t// ${todo} Process ${event}\n}\n${:import(javax.xml.stream.XMLInputFactory,javax.xml.stream.XMLEventReader,javax.xml.stream.events.XMLEvent)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

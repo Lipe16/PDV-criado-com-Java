@@ -1,0 +1,18 @@
+{
+  "uuid": "5811cbee-a0c5-4671-88ad-39ecf1168672",
+  "name": "Iterate over Map",
+  "description": "iterate over the entries of a Map",
+  "extraSearchTerms": [],
+  "tags": [
+    "jre"
+  ],
+  "code": "for(Entry\u003c${keyType:argType(map,0)},${valueType:argType(map,1)}\u003e ${entry} : ${map:var(java.util.Map)}.entrySet()) {\n\t${keyType} ${key} \u003d ${entry}.getKey();\n\t${valueType} ${value} \u003d ${entry}.getValue();\n\t${cursor}\n}\n${:import(java.util.Map.Entry)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

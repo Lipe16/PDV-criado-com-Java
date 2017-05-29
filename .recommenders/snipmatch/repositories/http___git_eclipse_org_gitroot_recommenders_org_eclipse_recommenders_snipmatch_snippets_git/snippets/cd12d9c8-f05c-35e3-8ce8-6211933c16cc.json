@@ -1,0 +1,29 @@
+{
+  "uuid": "cd12d9c8-f05c-35e3-8ce8-6211933c16cc",
+  "name": "execute",
+  "description": "execute a runnable in the UI thread",
+  "extraSearchTerms": [
+    "display",
+    "asynchronous",
+    "synchronous"
+  ],
+  "tags": [
+    "eclipse",
+    "swt",
+    "concurrency"
+  ],
+  "code": "${display:var(org.eclipse.swt.widgets.Display)}.${kind:link(syncExec, asyncExec)}(new ${runnable:newType(java.lang.Runnable)}(){\n\tpublic void run(){\n\t\t${line_selection}${cursor}\n\t}\n});",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "uuid": "0376e8a1-e9b7-317c-9768-860cd8bae20c",
+  "name": "while",
+  "description": "iterate with enumeration",
+  "extraSearchTerms": [
+    "loop"
+  ],
+  "tags": [
+    "java"
+  ],
+  "code": "while (${en:var(java.util.Enumeration)}.hasMoreElements()) {\n\t${type:argType(en)} ${elem:newName(type)} \u003d (${type}) ${en}.nextElement();\n\t${cursor}\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

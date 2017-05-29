@@ -1,0 +1,18 @@
+{
+  "uuid": "ae2b2a7a-06d6-3c30-ae4d-011d97a4b005",
+  "name": "main",
+  "description": "main method",
+  "extraSearchTerms": [],
+  "tags": [
+    "java"
+  ],
+  "code": "public static void main(String[] args) {\n\t${cursor}\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

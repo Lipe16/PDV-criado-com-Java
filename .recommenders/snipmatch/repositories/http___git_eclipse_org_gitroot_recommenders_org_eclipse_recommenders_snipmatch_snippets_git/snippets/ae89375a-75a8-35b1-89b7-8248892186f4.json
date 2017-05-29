@@ -1,0 +1,25 @@
+{
+  "uuid": "ae89375a-75a8-35b1-89b7-8248892186f4",
+  "name": "Text",
+  "description": "new Text",
+  "extraSearchTerms": [],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${type:newType(org.eclipse.swt.widgets.Text)} ${text:newName(org.eclipse.swt.widgets.Text)}\u003d new ${type}(${parent:var(org.eclipse.swt.widgets.Composite)}, ${style:link(\u0027SWT.SINGLE | SWT.LEAD | SWT.BORDER\u0027, \u0027SWT.SINGLE | SWT.LEAD | SWT.READ_ONLY | SWT.BORDER\u0027, \u0027SWT.SINGLE | SWT.LEAD | SWT.PASSWORD | SWT.BORDER\u0027, \u0027SWT.MULTI | SWT.WRAP | SWT.V_SCROLL | SWT.BORDER\u0027, \u0027SWT.MULTI | SWT.H_SCROLL | SWT.V_SCROLL | SWT.BORDER\u0027)});\n${text}.setLayoutData(new ${gridDataType:newType(org.eclipse.swt.layout.GridData)}(SWT.${horizontal:link(FILL, BEGINNING, CENTER, END)}, SWT.${vertical:link(CENTER, TOP, BOTTOM, FILL)}, ${hex:link(true, false)}, ${vex:link(false, true)}));\n${text}.setText(${word_selection}${});\n${imp:import(org.eclipse.swt.SWT)}${cursor}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

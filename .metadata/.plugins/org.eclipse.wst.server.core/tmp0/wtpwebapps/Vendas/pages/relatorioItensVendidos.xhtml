@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+		<h:form id="formTabela">
+			<p:panel header="Relatório de Itens Vendidos">
+				<p:dataTable emptyMessage="Nenhum registro encontrado"
+					rows="5" paginator="true" value="#{relatorioItensVendidosBean.itens}" var="cursorItem">
+						
+						
+						<f:facet name="header">
+							<p:outputLabel value="Data Inicio:" />
+							<p:calendar pattern="dd/MM/yyyy HH:mm:ss" value="#{relatorioItensVendidosBean.dataInicio}"/>
+							<p:outputLabel value="Data Fim:" />
+							<p:calendar pattern="dd/MM/yyyy HH:mm:ss" value="#{relatorioItensVendidosBean.dataFim}"/>
+							<p:commandButton value="pesquisar" actionListener="#{relatorioItensVendidosBean.listarPorData()}" update=":formTabela" />
+						</f:facet>
+					
+					
+					<p:column headerText="Cupom">
+						<h:outputText value="#{cursorItem.venda.codigo}" />
+					</p:column>
+					<p:column headerText="Produto">
+						<h:outputText value="#{cursorItem.produto.descricao}" />
+					</p:column>
+					<p:column headerText="Data" sortBy="#{cursorItem.venda.horario}">
+						<h:outputText value="#{cursorItem.venda.horario}" />
+					</p:column>
+					<p:column headerText="QTD">
+						<h:outputText value="#{cursorItem.quantidade}" />
+					</p:column>
+					<p:column headerText="Valor">
+						<h:outputText value="#{cursorItem.valorParcial}" />
+					</p:column>
+	
+				</p:dataTable>
+				
+			</p:panel>
+		</h:form>
+	
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,12 @@
+package com.ciadainformatica.vendas.domain;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+@Entity
+public class Crediario extends GenericDomain{
+	
+	@Column(nullable = false)
+	Pessoa pessoa;
+
+}

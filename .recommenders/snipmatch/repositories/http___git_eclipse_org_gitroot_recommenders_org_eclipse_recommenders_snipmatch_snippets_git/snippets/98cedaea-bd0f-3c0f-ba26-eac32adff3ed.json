@@ -1,0 +1,16 @@
+{
+  "uuid": "98cedaea-bd0f-3c0f-ba26-eac32adff3ed",
+  "name": "nls",
+  "description": "non-externalized string marker",
+  "extraSearchTerms": [
+    "internationalization",
+    "localization"
+  ],
+  "tags": [
+    "java",
+    "comment"
+  ],
+  "code": "//$$NON-NLS-${N}$$",
+  "location": "FILE",
+  "dependencies": []
+}

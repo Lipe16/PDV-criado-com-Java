@@ -1,0 +1,23 @@
+{
+  "uuid": "f3d89c9f-dc68-4d76-b5e9-5672d763d20f",
+  "name": "before tests",
+  "description": "setUp JUnit tests (JUnit 4)",
+  "extraSearchTerms": [],
+  "tags": [
+    "test"
+  ],
+  "code": "@Before\npublic void setUp() {\n\t${cursor}\n}\n${before:import(org.junit.Before)}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "dependencies": [
+    {
+      "groupId": "junit",
+      "artifactId": "junit",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

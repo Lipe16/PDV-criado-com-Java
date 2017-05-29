@@ -1,0 +1,28 @@
+{
+  "uuid": "fad345bf-258c-4418-b181-57f8179925d6",
+  "name": "CheckedTreeSelectionDialog",
+  "description": "Checked tree selection dialog",
+  "extraSearchTerms": [
+    "selection",
+    "dialog"
+  ],
+  "tags": [
+    "eclipse",
+    "jface",
+    "swt"
+  ],
+  "code": "CheckedTreeSelectionDialog ${dialog:newName(org.eclipse.ui.dialogs.CheckedTreeSelectionDialog)} \u003d new CheckedTreeSelectionDialog(${shell:var(org.eclipse.swt.widgets.Shell)}, ${lp:var(org.eclipse.jface.viewers.ILabelProvider)}, ${cp:var(org.eclipse.jface.viewers.ITreeContentProvider)});\n${dialog}.setTitle(${title:var(java.lang.String)});\n${dialog}.setMessage(${message:var(java.lang.String)});\n${dialog}.setInput(${cursor});\n${dialog}.create();\n${dialog}.open();\n${:import(org.eclipse.ui.dialogs.CheckedTreeSelectionDialog)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.ui",
+      "artifactId": "org.eclipse.ui.workbench",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

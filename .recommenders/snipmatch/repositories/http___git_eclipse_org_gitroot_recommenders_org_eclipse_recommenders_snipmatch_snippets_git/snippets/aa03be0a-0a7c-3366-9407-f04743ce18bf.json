@@ -1,0 +1,25 @@
+{
+  "uuid": "aa03be0a-0a7c-3366-9407-f04743ce18bf",
+  "name": "Shell",
+  "description": "new Shell",
+  "extraSearchTerms": [],
+  "tags": [
+    "eclipse",
+    "swt",
+    "widget"
+  ],
+  "code": "${shellType:newType(org.eclipse.swt.widgets.Shell)} ${shell:newName(org.eclipse.swt.widgets.Shell)} \u003d new ${shellType}(${parent:var(org.eclipse.swt.widgets.Shell)}, ${style:link(\u0027SWT.DIALOG_TRIM | SWT.PRIMARY_MODAL\u0027, \u0027SWT.DIALOG_TRIM | SWT.MODELESS\u0027, \u0027SWT.SHELL_TRIM | SWT.MODELESS\u0027, \u0027SWT.SHELL_TRIM | SWT.PRIMARY_MODAL\u0027)});\n${shell}.setLayout(new ${layoutType:newType(org.eclipse.swt.layout.GridLayout)}(${numberColumns:link(1, 2, 3, 4, 5)}, ${equalColumns:link(false, true)}));\n\n${imp:import(org.eclipse.swt.SWT)}${cursor}\n\n${shell}.pack();\n\n${shell}.open();",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

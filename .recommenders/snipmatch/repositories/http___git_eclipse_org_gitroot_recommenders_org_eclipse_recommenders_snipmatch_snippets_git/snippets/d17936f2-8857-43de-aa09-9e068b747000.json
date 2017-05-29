@@ -1,0 +1,32 @@
+{
+  "uuid": "d17936f2-8857-43de-aa09-9e068b747000",
+  "name": "Decorate a Control with an image",
+  "description": "Decorates a Control with an image and description shown in a hover",
+  "extraSearchTerms": [
+    "tooltip"
+  ],
+  "tags": [
+    "jface",
+    "eclipse",
+    "ui"
+  ],
+  "code": "ControlDecoration ${decoration:newName(org.eclipse.jface.fieldassist.ControlDecoration)} \u003d new ControlDecoration(${control:var(org.eclipse.swt.widgets.Control)}, ${style:link(\u0027SWT.TOP | SWT.LEFT\u0027, \u0027SWT.TOP | SWT.RIGHT\u0027, \u0027SWT.BOTTOM | SWT.LEFT\u0027, \u0027SWT.BOTTOM | SWT.RIGHT\u0027)});\n${decoration}.setDescriptionText(${description:var(java.lang.String)});\n${decoration}.setImage(${image:var(org.eclipse.swt.graphics.Image)});\n${decoration}.setShowOnlyOnFocus(${focusOnly:link(\u0027false\u0027, \u0027true\u0027)});\n${:import(org.eclipse.jface.fieldassist.ControlDecoration, org.eclipse.swt.SWT)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "org.eclipse.jface",
+      "artifactId": "org.eclipse.jface",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

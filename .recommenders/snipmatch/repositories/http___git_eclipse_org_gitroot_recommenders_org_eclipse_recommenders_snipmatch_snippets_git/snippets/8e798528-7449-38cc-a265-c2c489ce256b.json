@@ -1,0 +1,23 @@
+{
+  "uuid": "8e798528-7449-38cc-a265-c2c489ce256b",
+  "name": "test3",
+  "description": "test method (JUnit 3)",
+  "extraSearchTerms": [],
+  "tags": [
+    "test"
+  ],
+  "code": "public void test${name}() throws Exception {\n\t${cursor}\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "dependencies": [
+    {
+      "groupId": "junit",
+      "artifactId": "junit",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

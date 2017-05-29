@@ -1,0 +1,21 @@
+{
+  "uuid": "87bdaf43-aab2-32df-a543-04c067671f9b",
+  "name": "arraymerge",
+  "description": "merge two arrays into one",
+  "extraSearchTerms": [
+    "concatenate",
+    "append"
+  ],
+  "tags": [
+    "java"
+  ],
+  "code": "${array_type}[] ${result:newName(array1)} \u003d new ${array_type}[${array1:array}.length + ${array}.length];\nSystem.arraycopy(${array1}, 0, ${result}, 0, ${array1}.length);\nSystem.arraycopy(${array}, 0, ${result}, ${array1}.length, ${array}.length);",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

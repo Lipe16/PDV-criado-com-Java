@@ -1,0 +1,18 @@
+{
+  "uuid": "c2181b9d-2c10-379d-8062-28eff23b495e",
+  "name": "foreach",
+  "description": "iterate over an array or Iterable",
+  "extraSearchTerms": [],
+  "tags": [
+    "java"
+  ],
+  "code": "for (${iterable_type} ${iterable_element} : ${iterable}) {\n\t${cursor}\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

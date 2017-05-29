@@ -1,0 +1,27 @@
+{
+  "uuid": "7ec61317-ec54-44b0-8f50-6d7addb4d500",
+  "name": "Drag \u0026 Drop Target",
+  "description": "Configure a Control as drag \u0026 drop target",
+  "extraSearchTerms": [
+    "dnd"
+  ],
+  "tags": [
+    "swt",
+    "eclipse",
+    "ui"
+  ],
+  "code": "DropTarget ${target:newName(org.eclipse.swt.dnd.DropTarget)} \u003d new  DropTarget(${control:var(org.eclipse.swt.widgets.Control)}, ${modes:link(\u0027DND.DROP_COPY\u0027, \u0027DND.DROP_MOVE\u0027, \u0027DND.DROP_LINK\u0027, \u0027DND.DROP_NONE\u0027)});\n${target}.setTransfer(${transferArray:var(\u0027org.eclipse.swt.dnd.Transfer[]\u0027)});\n${target}.addDropListener(${dropTargetListener:var(org.eclipse.swt.dnd.DropTargetListener)});\n${:import(org.eclipse.swt.dnd.DropTarget, org.eclipse.swt.dnd.DND)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "uuid": "267a26dd-16dc-4b1e-bf4b-8b6170f88cdb",
+  "name": "XSL transformation",
+  "description": "Transform an XML document with XSLT",
+  "extraSearchTerms": [],
+  "tags": [
+    "xml"
+  ],
+  "code": "TransformerFactory ${factory:newName(javax.xml.transform.TransformerFactory)} \u003d TransformerFactory.newInstance();\nTransformer ${transformer:newName(javax.xml.transform.Transformer)} \u003d ${factory}.newTransformer(${xslt:var(javax.xml.transform.Source)});\n${transformer}.transform(${input:var(javax.xml.transform.Source)}, ${output:var(javax.xml.transform.Result)});\n${:import(javax.xml.transform.TransformerFactory, javax.xml.transform.Transformer)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

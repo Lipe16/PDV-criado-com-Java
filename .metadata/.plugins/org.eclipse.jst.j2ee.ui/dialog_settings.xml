@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\Filipe\Desktop\Vendas.war"/>
+		<item value="C:\xampp\tomcat\webapps\VENDAS\Vendas.war"/>
+	</list>
+</section>

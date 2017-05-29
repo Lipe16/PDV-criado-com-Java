@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+	<h:form id="formTabela">
+		<p:panel header="Pessoas Listagem">
+			<!--  Criação de tabela com prime faces  -->
+			<p:dataTable  scrollable="true" scrollWidth="96%" semptyMessage="Nenhum registro encontrado"
+				paginator="true" value="#{pessoaBean.pessoas}" var="cursorPessoa" >
+				<f:facet name="header">
+					<p:commandButton value="Novo"
+						oncomplete="PF('dialogoPessoa').show();"
+						actionListener="#{pessoaBean.novo()}"
+						update=":formCadastro"/>
+				</f:facet>
+				
+				<p:column style="width:220px" headerText="Nome">
+					<h:outputText value="#{cursorPessoa.nome}" />
+				</p:column>
+
+				<p:column style="width:130px" headerText="CPF">
+					<h:outputText value="#{cursorPessoa.cpf}" />
+				</p:column>
+
+				<p:column style="width:150px" headerText="RG">
+					<h:outputText value="#{cursorPessoa.rg}" />
+				</p:column>
+
+				<p:column style="width:100px" headerText="Rua">
+					<h:outputText value="#{cursorPessoa.rua}" />
+				</p:column>
+
+				<p:column style="width:16px" headerText="Nº">
+					<h:outputText value="#{cursorPessoa.numero}" />
+				</p:column>
+
+				<p:column style="width:80px" headerText="Bairro">
+					<h:outputText value="#{cursorPessoa.bairro}" />
+				</p:column>
+				
+				<p:column style="width:90px" headerText="Cep">
+					<h:outputText value="#{cursorPessoa.cep}" />
+				</p:column>
+				
+				<p:column style="width:90px" headerText="Complemento">
+					<h:outputText value="#{cursorPessoa.complemento}" />
+				</p:column>
+				
+				<p:column style="width:85px" headerText="Telefone">
+					<h:outputText value="#{cursorPessoa.telefone}" />
+				</p:column>
+				
+				<p:column style="width:85px" headerText="Celular">
+					<h:outputText value="#{cursorPessoa.celular}" />
+				</p:column>
+				
+				<p:column style="width:220px" headerText="Email">
+					<h:outputText value="#{cursorPessoa.email}" />
+				</p:column>
+				
+				<p:column style="width:80px" headerText="Cidade">
+					<h:outputText value="#{cursorPessoa.cidade.nome}" />
+				</p:column>
+				
+				<p:column headerText="Opções">
+				<!-- botão só despara se  dialogo for confirmado positivamente-->
+					<p:commandButton icon="ui-icon-trash" actionListener="#{pessoaBean.excluir}"  update=":mensagem :formTabela">	
+						<p:confirm header="Confirmação" message="Deseja apagar a pessoa?" icon="ui-icon-alert" />
+    					<f:attribute name="pessoaSelecionada" value="#{cursorPessoa}"/>
+    				</p:commandButton>
+				</p:column>
+				
+			</p:dataTable>
+			<!-- janela de confirmação global, para qualquer confirmação na página -->
+				<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+        			<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+				</p:confirmDialog>
+			
+		</p:panel>
+	</h:form>
+
+	<!--  janela de dialogo com prime faces  -->
+	<p:dialog widgetVar="dialogoPessoa" header="Nova pessoa"
+		closable="false" modal="true" resizable="false">
+		<h:form id="formCadastro">
+			<h:panelGrid columns="2">
+				<p:outputLabel value="Nome: "/>
+				<p:inputText maxlength="100"  value="#{pessoaBean.pessoa.nome}"/>
+				
+				<p:outputLabel for="cpf" value="CPF: " />
+				<p:inputMask id="cpf" mask="999.999.999-99" value="#{pessoaBean.pessoa.cpf}" />
+				
+				<p:outputLabel value="RG: " />
+				<p:inputText maxlength="14" value="#{pessoaBean.pessoa.rg}"/>
+				
+				<p:outputLabel value="Rua: " />
+				<p:inputText maxlength="80" value="#{pessoaBean.pessoa.rua}"/>
+				
+				<p:outputLabel value="Numero: " />
+				<p:inputText maxlength="6" value="#{pessoaBean.pessoa.numero}"/>
+				
+				<p:outputLabel value="Bairro: " />
+				<p:inputText maxlength="15" value="#{pessoaBean.pessoa.bairro}"/>
+				
+				<p:outputLabel value="CEP: " />
+				<p:inputText maxlength="15" value="#{pessoaBean.pessoa.cep}"/>
+				
+				<p:outputLabel value="Complemento: " />
+				<p:inputText maxlength="10" value="#{pessoaBean.pessoa.complemento}"/>
+				
+				<p:outputLabel for="telefone" value="Telefone: " />
+				<p:inputMask id="telefone" mask="(99)9999-9999" value="#{pessoaBean.pessoa.telefone}"/>
+				
+				<p:outputLabel for="celular" value="Celular: " />
+				<p:inputMask id="celular" mask="(99)99999-9999" value="#{pessoaBean.pessoa.celular}"/>
+				
+				<p:outputLabel value="Email: " />
+				<p:inputText maxlength="100" value="#{pessoaBean.pessoa.email}"/>
+				
+				<p:outputLabel value="Cidade: " />
+				<p:selectOneMenu filter="true" value="#{pessoaBean.pessoa.cidade}" converter="omnifaces.SelectItemsConverter">
+					<f:selectItem noSelectionOption="true" itemLabel="selecione uma cidade"/>
+					
+					<f:selectItems  value="#{pessoaBean.cidades}"
+					 var="cidade" itemValue="#{cidade}" itemLabel="#{cidade.nome}"/>
+				</p:selectOneMenu>
+
+			</h:panelGrid>
+
+			
+				<h:panelGrid columns="2" >
+					<p:commandButton value="Salvar" actionListener="#{pessoaBean.salvar()}"
+						update=":mensagem :formCadastro :formTabela"/>
+					<p:commandButton value="fechar"
+						oncomplete="PF('dialogoPessoa').hide();" />
+				</h:panelGrid>
+			
+			
+		</h:form>
+	</p:dialog>
+
+	</ui:define>
+</ui:composition>

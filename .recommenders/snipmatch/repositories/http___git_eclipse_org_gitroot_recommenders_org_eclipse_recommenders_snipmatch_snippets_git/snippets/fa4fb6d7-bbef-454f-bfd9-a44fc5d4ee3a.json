@@ -1,0 +1,19 @@
+{
+  "uuid": "fa4fb6d7-bbef-454f-bfd9-a44fc5d4ee3a",
+  "name": "Concurrently execute a collection of tasks",
+  "description": "Execute Callables in parallel, sequentially process their results",
+  "extraSearchTerms": [],
+  "tags": [
+    "concurrency",
+    "jre"
+  ],
+  "code": "CompletionService\u003c${Result}\u003e ${service:newName(java.util.concurrent.CompletionService)} \u003d new ExecutorCompletionService\u003c${Result}\u003e(${executor:var(java.util.concurrent.Executor)});\nfor (Callable\u003c${Result}\u003e ${task:newName(java.util.concurrent.Callable)} : ${collection}) {\n\t${service}.submit(${task});\n}\n\nint ${size:newName(int)} \u003d ${collection}.size();\nfor (int ${i:newName(int)} \u003d 0; ${i} \u003c ${size}; ${i}++) {\n\t${Result} ${result} \u003d ${service}.take().get();\n\t// ${todo} Process ${result}\n}\n${:import(java.util.concurrent.CompletionService,java.util.concurrent.ExecutorCompletionService,java.util.concurrent.Callable)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

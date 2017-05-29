@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+	<h:form id="formTabela">
+		<p:panel header="Clientes Listagem">
+			<!--  Criação de tabela com prime faces  -->
+			<p:dataTable emptyMessage="Nenhum registro encontrado"
+				paginator="true" value="#{clienteBean.clientes}" var="cliente">
+				<f:facet name="header">
+					<p:commandButton value="Novo"
+						oncomplete="PF('dialogoCliente').show();"
+						actionListener="#{clienteBean.novo()}"
+						update=":formCadastro"  />
+				</f:facet>
+				
+				<p:column headerText="Cod">
+					<h:outputText value="#{cliente.codigo}" />
+				</p:column>
+				
+				<p:column headerText="Nome" filterBy="#{cliente.pessoa.nome}">
+					<h:outputText value="#{cliente.pessoa.nome}" />
+				</p:column>
+
+				<p:column headerText="CPF">
+					<h:outputText value="#{cliente.pessoa.cpf}" />
+				</p:column>
+
+				<p:column headerText="Data Cadastro">
+					<h:outputText value="#{cliente.dataCadastro}" />
+				</p:column>
+
+				<p:column headerText="Liberado">
+					<h:outputText value="#{cliente.liberado}" />
+				</p:column>
+
+				<p:column headerText="Opções">
+				<!-- botão só despara se  dialogo for confirmado positivamente-->
+					<p:commandButton icon="ui-icon-trash" actionListener="#{clienteBean.excluir}"  update=":mensagem :formTabela">	
+						<p:confirm header="Confirmação" message="Deseja apagar o cliente?" icon="ui-icon-alert" />
+    					<f:attribute name="clienteSelecionado" value="#{cliente}"/>
+    				</p:commandButton>
+				</p:column>
+
+			</p:dataTable>
+			<!-- janela de confirmação global, para qualquer confirmação na página -->
+				<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+        			<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+				</p:confirmDialog>
+		</p:panel>
+	</h:form>
+
+	<!--  janela de dialogo com prime faces  -->
+	<p:dialog widgetVar="dialogoCliente" header="Novo Cliente"
+		closable="false" modal="true" resizable="false">
+		<h:form id="formCadastro">
+			<h:panelGrid columns="2">
+				<p:outputLabel value="Pessoa: " />
+				<p:selectOneMenu filter="true" value="#{clienteBean.cliente.pessoa}" 
+				converter="omnifaces.SelectItemsConverter">
+					<f:selectItem noSelectionOption="true" itemLabel="Selecione uma pessoa" />
+					<f:selectItems value="#{clienteBean.pessoas}" var="pessoa" 
+					itemValue="#{pessoa}" itemLabel="#{pessoa.nome} - #{pessoa.cpf}"/>
+				</p:selectOneMenu>
+
+				<p:outputLabel value="Data:" />
+				<p:calendar value="#{clienteBean.cliente.dataCadastro}"/>
+
+				<p:outputLabel value="Ativo:" />
+				<p:selectBooleanCheckbox value="#{clienteBean.cliente.liberado}"/>
+			</h:panelGrid>
+
+			<h:panelGrid columns="2">
+				<p:commandButton value="Salvar"  actionListener="#{clienteBean.salvar()}"
+				update=":mensagem :formCadastro :formTabela" />
+				<p:commandButton value="fechar"
+					oncomplete="PF('dialogoCliente').hide();" />
+			</h:panelGrid>
+		</h:form>
+	</p:dialog>
+
+	</ui:define>
+</ui:composition>

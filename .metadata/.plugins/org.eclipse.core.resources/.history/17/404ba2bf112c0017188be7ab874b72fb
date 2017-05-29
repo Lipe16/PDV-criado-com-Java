@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  BIBLIOTECAS  -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="principal.xhtml">
+
+	<ui:define name="pagina">
+	
+		<div style="margin: 0; padding: 0;">
+			<script async  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Cabecalho728X280 -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:728px;height:90px"
+			     data-ad-client="ca-pub-6852613369528290"
+			     data-ad-slot="7027847565"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		
+		<a target="_blanck" href="https://novasideiasesolucoes.com.br"><h:graphicImage style="float:right;" width="25%" library="images" name="logo.png"/></a>
+	
+	</ui:define>
+</ui:composition>

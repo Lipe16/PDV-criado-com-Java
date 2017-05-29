@@ -1,0 +1,25 @@
+{
+  "uuid": "add677ea-fe79-4c63-a299-e41d13bb5fbd",
+  "name": "Copy to Clipboard",
+  "description": "Copies an object to the default clipboard",
+  "extraSearchTerms": [],
+  "tags": [
+    "swt",
+    "eclipse",
+    "ui"
+  ],
+  "code": "Clipboard ${clipboard:newName(org.eclipse.swt.dnd.Clipboard)} \u003d new Clipboard(${display:var(org.eclipse.swt.widgets.Display)});\n${clipboard}.setContents(${objectArray:var(\u0027java.lang.Object[]\u0027)}, ${transferArray:var(\u0027org.eclipse.swt.dnd.Transfer[]\u0027)});\n${clipboard}.dispose();\n${:import(org.eclipse.swt.dnd.Clipboard)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.swt",
+      "artifactId": "org.eclipse.swt",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

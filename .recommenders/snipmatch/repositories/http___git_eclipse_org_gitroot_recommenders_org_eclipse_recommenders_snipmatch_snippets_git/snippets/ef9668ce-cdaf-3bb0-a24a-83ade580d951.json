@@ -1,0 +1,20 @@
+{
+  "uuid": "ef9668ce-cdaf-3bb0-a24a-83ade580d951",
+  "name": "lazy",
+  "description": "lazy creation",
+  "extraSearchTerms": [
+    "demand"
+  ],
+  "tags": [
+    "java"
+  ],
+  "code": "if (${name:var} \u003d\u003d null) {\n\t${name} \u003d new ${type}(${arguments});\n\t${cursor}\n}\n\nreturn ${name};",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

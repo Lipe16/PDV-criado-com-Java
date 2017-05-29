@@ -1,0 +1,18 @@
+{
+  "uuid": "370670bd-e72f-327b-aa91-5efcbc64eaad",
+  "name": "ifelse",
+  "description": "if else statement",
+  "extraSearchTerms": [],
+  "tags": [
+    "java"
+  ],
+  "code": "if (${condition:var(boolean)}) {\n\t${cursor}\n} else {\n\t\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "uuid": "38b94473-22a0-405e-98c8-de54b45ce683",
+  "name": "XML parsing with SAX",
+  "description": "Parse an XML input using a push parser",
+  "extraSearchTerms": [],
+  "tags": [
+    "xml"
+  ],
+  "code": "SAXParserFactory ${factory:newName(javax.xml.parsers.SAXParserFactory)} \u003d SAXParserFactory.newInstance();\nSAXParser ${parser:newName(javax.xml.parsers.SAXParser)} \u003d ${factory}.newSAXParser();\n${parser}.parse(${input}, new DefaultHandler() {\n\t// ${todo} Override methods as necessary\n});\n${:import(javax.xml.parsers.SAXParserFactory,javax.xml.parsers.SAXParser,org.xml.sax.helpers.DefaultHandler)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

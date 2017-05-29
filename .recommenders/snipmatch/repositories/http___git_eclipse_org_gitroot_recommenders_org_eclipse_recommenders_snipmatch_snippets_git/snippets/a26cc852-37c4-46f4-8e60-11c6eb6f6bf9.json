@@ -1,0 +1,23 @@
+{
+  "uuid": "a26cc852-37c4-46f4-8e60-11c6eb6f6bf9",
+  "name": "write object to file",
+  "description": "write an object to a file using an ObjectOutputStream",
+  "extraSearchTerms": [
+    "output",
+    "stream",
+    "save",
+    "serialization"
+  ],
+  "tags": [
+    "io"
+  ],
+  "code": "${fosType:newType(java.io.FileOutputStream)} ${fos:newName(java.io.FileOutputStream)} \u003d new ${fosType}(${file:var(java.io.File)});\n${oosType:newType(java.io.ObjectOutputStream)} ${oos:newName(java.io.ObjectOutputStream)} \u003d new ${oosType}(${fos});\ntry {\n\t${oos}.write${cursor}\n} finally {\n\t${oos}.close();\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

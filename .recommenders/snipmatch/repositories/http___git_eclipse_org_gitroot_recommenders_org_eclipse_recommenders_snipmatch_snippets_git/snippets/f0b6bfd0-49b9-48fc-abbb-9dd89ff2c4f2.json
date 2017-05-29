@@ -1,0 +1,28 @@
+{
+  "uuid": "f0b6bfd0-49b9-48fc-abbb-9dd89ff2c4f2",
+  "name": "Flag WizardPage as complete/incomplete",
+  "description": "Notifies the user that the information on a WizardPage is incomplete",
+  "extraSearchTerms": [
+    "notification",
+    "error"
+  ],
+  "tags": [
+    "jface",
+    "eclipse",
+    "ui"
+  ],
+  "code": "${wizardPage:var(org.eclipse.jface.wizard.WizardPage)}.setErrorMessage(${message:var(java.lang.String)});\n${wizardPage}.setPageComplete(${complete:link(false, true)});\n",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "org.eclipse.jface",
+      "artifactId": "org.eclipse.jface",
+      "version": "0.0.0"
+    },
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

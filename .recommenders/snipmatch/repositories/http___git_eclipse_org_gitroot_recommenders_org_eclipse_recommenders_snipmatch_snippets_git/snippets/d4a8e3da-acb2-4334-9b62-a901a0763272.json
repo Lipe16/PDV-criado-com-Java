@@ -1,0 +1,25 @@
+{
+  "uuid": "d4a8e3da-acb2-4334-9b62-a901a0763272",
+  "name": "Read an entry from a ZIP file",
+  "description": "Searches the entry by name and obtains an InputStream",
+  "extraSearchTerms": [
+    "jar",
+    "archive",
+    "unpack",
+    "decompress",
+    "compression"
+  ],
+  "tags": [
+    "jre",
+    "zip"
+  ],
+  "code": "ZipEntry ${entry:newName(java.util.zip.ZipEntry)} \u003d ${zipFile:var(java.util.zip.ZipFile)}.getEntry(${string:var(java.lang.String)});\nInputStream ${inputStream:newName(java.io.InputStream)} \u003d ${zipFile}.getInputStream(${entry});\n${:import(java.util.zip.ZipEntry, java.io.InputStream)}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

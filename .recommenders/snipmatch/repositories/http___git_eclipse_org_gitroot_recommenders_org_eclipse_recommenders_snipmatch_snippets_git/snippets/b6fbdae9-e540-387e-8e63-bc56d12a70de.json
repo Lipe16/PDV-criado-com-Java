@@ -1,0 +1,18 @@
+{
+  "uuid": "b6fbdae9-e540-387e-8e63-bc56d12a70de",
+  "name": "instanceof",
+  "description": "dynamic type test and cast",
+  "extraSearchTerms": [],
+  "tags": [
+    "java"
+  ],
+  "code": "if (${name:var} instanceof ${type}) {\n\t${type} ${new_name} \u003d (${type})${name};\n\t${cursor}\n}",
+  "location": "JAVA_STATEMENTS",
+  "dependencies": [
+    {
+      "groupId": "jre",
+      "artifactId": "jre",
+      "version": "0.0.0"
+    }
+  ]
+}

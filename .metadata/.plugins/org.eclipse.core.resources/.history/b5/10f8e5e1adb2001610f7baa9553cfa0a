@@ -1,0 +1,35 @@
+package com.ciadainformatica.vendas.domain;
+
+import javax.persistence.Column;
+
+public class TipoDeVenda {
+	
+	@Column(nullable = false)
+	private String tipo;//dinheiro, cartão de credito, cartão de debito, crediario
+	
+	@Column(nullable = false)
+	private Venda venda;//cupom da venda, valor, data
+
+	
+	
+	
+	
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public Venda getVenda() {
+		return venda;
+	}
+
+	public void setVenda(Venda venda) {
+		this.venda = venda;
+	}
+	
+	
+
+}
