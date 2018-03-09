@@ -5,7 +5,7 @@ Imagem do PDV
 ![PDV](https://image.ibb.co/mPPGsn/JSF.png)
 
 Este projeto foi escrito com Eclipse usando Maven, hibernate, MySql, JSF, PrimeFaces dentre outros. Inicei
-ele quando comecei a aprender Java para WEB com as aulas do prof Sérgio( [Sérgiohttps](https://www.youtube.com/channel/UCJdtabTp9TXaHxdYrAa2j0A) ),
+ele quando comecei a aprender Java para WEB com as aulas do prof Sérgio( [Canal no Youtube de Sérgio](https://www.youtube.com/channel/UCJdtabTp9TXaHxdYrAa2j0A) ),
 e pretendo ir melhorando ele com passar do tempo e o adequando com funções fiscais.
 
 
