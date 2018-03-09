@@ -51,6 +51,7 @@
   
   	<!-- dependencias -->
   	<dependencies>
+
   
   <!-- hibernate-->
 		<dependency>

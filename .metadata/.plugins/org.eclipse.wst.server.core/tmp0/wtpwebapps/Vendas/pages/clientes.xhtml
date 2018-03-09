@@ -14,7 +14,7 @@
 	<h:form id="formTabela">
 		<p:panel header="Clientes Listagem">
 			<!--  Criação de tabela com prime faces  -->
-			<p:dataTable emptyMessage="Nenhum registro encontrado"
+			<p:dataTable emptyMessage="Nenhum registro encontrado" rows="15"
 				paginator="true" value="#{clienteBean.clientes}" var="cliente">
 				<f:facet name="header">
 					<p:commandButton value="Novo"

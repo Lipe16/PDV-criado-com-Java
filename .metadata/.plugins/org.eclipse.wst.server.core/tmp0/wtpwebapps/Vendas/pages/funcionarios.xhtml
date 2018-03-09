@@ -15,7 +15,7 @@
 		<p:panel header="Funcionarios listagem">
 			<!--  Criação de tabela com prime faces  -->
 			<p:dataTable emptyMessage="Nenhum registro encontrado"
-				paginator="true" value="#{funcionarioBean.funcionarios}" var="funcionario">
+				rows="15" paginator="true" value="#{funcionarioBean.funcionarios}" var="funcionario">
 				<f:facet name="header">
 					<p:commandButton value="Novo"
 						oncomplete="PF('dialogoFuncionario').show();"

@@ -15,7 +15,7 @@
 		<p:panel header="Pessoas Listagem">
 			<!--  Criação de tabela com prime faces  -->
 			<p:dataTable  scrollable="true" scrollWidth="96%" semptyMessage="Nenhum registro encontrado"
-				paginator="true" value="#{pessoaBean.pessoas}" var="cursorPessoa" >
+				rows="15" paginator="true" value="#{pessoaBean.pessoas}" var="cursorPessoa" >
 				<f:facet name="header">
 					<p:commandButton value="Novo"
 						oncomplete="PF('dialogoPessoa').show();"
@@ -23,7 +23,7 @@
 						update=":formCadastro"/>
 				</f:facet>
 				
-				<p:column style="width:220px" headerText="Nome">
+				<p:column style="width:220px" headerText="Nome" filterBy="#{cursorPessoa.nome}">
 					<h:outputText value="#{cursorPessoa.nome}" />
 				</p:column>
 

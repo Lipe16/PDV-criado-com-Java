@@ -14,7 +14,7 @@
 	<h:form id="formTabela">
 		<p:panel header="Fabricantes listagem">
 			<p:dataTable emptyMessage="Nenhum registro encontrado"
-				paginator="true" value="#{fabricanteBean.fabricantes}" var="cursorFabricante">
+				rows="15" paginator="true" value="#{fabricanteBean.fabricantes}" var="cursorFabricante">
 				<f:facet name="header">
 					<p:commandButton value="NOVO"
 						oncomplete="PF('dialogoFabricantes').show()"
@@ -22,7 +22,7 @@
 						update=":formCadastro" />
 				</f:facet>
 
-				<p:column headerText="Fabricantes">
+				<p:column headerText="Fabricantes" filterBy="#{cursorFabricante.descricao}">
 					<h:outputText value="#{cursorFabricante.descricao}" />
 				</p:column>
 			</p:dataTable>

@@ -1,3 +1,4 @@
+do-not-show-remove-module-warning=true
 eclipse.preferences.version=1
 restart=2
 show-on-activity=false
