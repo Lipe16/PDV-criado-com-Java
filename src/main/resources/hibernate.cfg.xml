@@ -46,7 +46,7 @@
 		
 		<mapping class="com.ciadainformatica.vendas.domain.Crediario"/>
 		<mapping class="com.ciadainformatica.vendas.domain.TipoDeVenda"/>
-
+		
 		
     </session-factory>
 

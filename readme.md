@@ -1,5 +1,36 @@
-# Sistema_de_Vendas_Java
+# JPDV
 Sistema de vendas desenvolvido com Java WEB, inspirado nas aulas do Prof Sérgio Delfino no youtube
+
+> ⚠️ **Atenção:** Este sistema não é adequado para uso comercial ou em ambientes de produção, pois foi desenvolvido há anos, durante os meus primeiros passos na programação, e encontra-se desatualizado.
+
+> ⚠️ **Atenção:** Certifique-se de seguir as instruções abaixo para executar corretamente o sistema.
+
+### 🛠️ Passos para executar o sistema:
+
+1. **Configure o ambiente:**
+   - Utilize **Tomcat 8.5** como servidor de aplicação.
+   - Certifique-se de que a versão do Java instalada é o **JDK 21**.
+
+2. **Configure o banco de dados:**
+   - Este sistema utiliza o banco de dados **MySQL**.
+   - As configurações do banco podem ser encontradas no arquivo:
+     - `src/main/resources/hibernate.cfg.xml`
+   - Verifique e ajuste as informações de conexão conforme necessário (URL, usuário, senha, etc.).
+
+3. **Execute a aplicação:**
+   - Inicie o servidor com o projeto configurado.
+
+4. **Teste o login:**
+   - Use as seguintes credenciais para testar:
+     - **Usuário:** `11111111111`
+     - **Senha:** `1`
+
+5. **Problema com o login?**
+   - Se aparecer a mensagem de **"Senha inválida"**, siga este passo:
+     - Execute o arquivo SQL localizado na raiz do projeto chamado `import.sql`.
+
+> 💡 **Dica:** Após executar o `import.sql`, tente fazer login novamente.
+
 
 Imagem do PDV
 ![PDV](https://image.ibb.co/mPPGsn/JSF.png)
