@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+C:\Users\Filipe\Desktop\ProjetosGit\PDV-criado-com-Java\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1078212162.index
-499024340.index
-493877159.index
-3553744582.index
-4191061036.index
-2186814694.index

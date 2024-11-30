@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Convert local variable &apos;com.ciadainformatica.vendas.bean.CrediarioBean.excluirParcelaD().aux01&apos; in &apos;com.ciadainformatica.vendas.bean.CrediarioBean.excluirParcelaD()&apos; to field&#x0D;&#x0A;- Original project: &apos;Vendas&apos;&#x0D;&#x0A;- Original element: &apos;com.ciadainformatica.vendas.bean.CrediarioBean.excluirParcelaD().aux01&apos;&#x0D;&#x0A;- Field name: &apos;aux01&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;aux01&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src\/main\/java&lt;com.ciadainformatica.vendas.bean{CrediarioBean.java" name="aux01" selection="3483 12" stamp="1487021979677" static="false" version="1.0" visibility="2"/>
-</session>
