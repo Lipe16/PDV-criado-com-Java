@@ -3,7 +3,6 @@ Sistema de vendas desenvolvido com Java WEB, inspirado nas aulas do Prof Sérgio
 
 > ⚠️ **Atenção:** Este sistema não é adequado para uso comercial ou em ambientes de produção, pois foi desenvolvido há anos, durante os meus primeiros passos na programação, e encontra-se desatualizado.
 
-> ⚠️ **Atenção:** Certifique-se de seguir as instruções abaixo para executar corretamente o sistema.
 
 ### 🛠️ Passos para executar o sistema:
 
