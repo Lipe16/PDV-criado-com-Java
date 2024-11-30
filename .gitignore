@@ -1,0 +1,68 @@
+# Ignorar arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos gerados por IDEs (Eclipse, IntelliJ IDEA, NetBeans, etc.)
+*.iml
+.idea/
+*.classpath
+*.project
+*.settings/
+out/
+nbproject/private/
+
+# Ignorar logs e arquivos temporários
+*.log
+*.tmp
+hs_err_pid*.log
+
+# Ignorar diretórios do Maven
+target/
+dependency-reduced-pom.xml
+release.properties
+
+# Ignorar diretórios e arquivos do JSF gerados dinamicamente
+*.faces
+*.bak
+*.swp
+*.data
+*.db
+*.db-journal
+
+# Ignorar arquivos de configuração específicos do ambiente
+*.env
+*.key
+*.pem
+*.crt
+*.p12
+*.keystore
+*.properties.local
+application-local.yml
+
+# Ignorar builds do sistema operacional
+bin/
+dist/
+
+# Ignorar arquivos de backup e outros temporários
+*.~*
+*.orig
+*.bak
+*.old
+
+# Ignorar arquivos de caches do IntelliJ
+.idea/
+*.iws
+
+
+/.metadata/
+/.recommenders/
+
+/target/
+/.classpath
+/*.project
+/.settings
+/*.springBeans
+
+/.metadata/
+/.recommenders/
+/target/
